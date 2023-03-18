@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.classicSection{
+    background-color: white;
+    padding:20px;
+    margin:20px;
+}
+
+.classicSection{
+    border-top:#734b6d 1px solid;
+    border-radius: 3%;
+}
+
+#bodyHomepage {
+    background-color: rgb(247, 247, 247);
+}
+
+footer {
+    margin-top: 500px;
+    background-color: rgb(49, 49, 49);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.mainNav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    background-color: #ffff;
+    border-bottom: lightgray solid 1px;
+    width: 100%;
+}
+
+.mainNav img {
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: auto;
+    padding: 5px;
+    display: flex;
+}
+
+.navItems {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+    align-content: center;
+}
+
+.navItems li {
+    margin-right: 20px;
+    list-style: none;
+    color: black;
+}
+
+
+.navItems li a,
+.navItems li {
+    text-decoration: none;
+    color: #734b6d;
+    font-weight: bold;
+}
+
+.navItems li>a:hover {
+    padding-bottom: 20px;
+    border-bottom: #734b6d 5px solid;
+}
+
+@media(max-width: 768px) {
+    .mainNav {
+        justify-content: center;
+        padding-bottom: 4px;
+    }
+
+    .mainNav li a{
+        font-size:12px;
+    }
+
+    .navItems li a:hover {
+        padding-bottom: 20px;
+        border-bottom: #734b6d 5px solid;
+    }
+}
+
+@media(max-width: 678px) {
+    .mainNav {
+        justify-content: center;
+        padding-bottom: 4px;
+    }
+
+    .navItems li a:hover {
+        padding-bottom: 5px;
+        border-bottom: #734b6d 5px solid;
+    }
+}
+
+.dropdownList {
+    border: 5px solid transparent;
+    display: block;
+}
+
+.dropdownContent {
+    margin-top: 25px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.dropdownList:hover .dropdownContent {
+    display: block;
+}
+
+
+/*Login Page*/
+#loginNav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    border-bottom: lightgray solid 1px;
+    flex-shrink: 20;
+    width: 100%;
+}
+
+#loginNav img {
+    top: 0;
+    right: 0;
+    height: 70px;
+    min-width: 0;
+}
+
+#loginBody {
+    margin: 0;
+    padding: 0;
+    background:
+        linear-gradient(to top, #482d5f 0%, #734b6d 5%, rgba(0, 0, 0, 0.05) 100%),
+        url('images/campus.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#loginSocials {
+    margin-left: auto;
+    margin: 10px;
+}
+
+#loginSocials img {
+    width: 20px;
+    height: 20px;
+}
+
+#loginSocials img:hover {
+    outline: #2691d9 2px solid;
+}
+
+.loginDesign {
+    border-top: 3px solid #734b6d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.loginDesign h1 {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.loginDesign form,
+#loginDesignHeader {
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: #2691d9;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+.loginForgotPassword {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.loginForgotPassword:hover {
+    text-decoration: underline;
+}
+
+.loginDesign input[type="button"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #734b6d;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginDesign input[type="button"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+.loginSignup_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.loginSignup_link a {
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.loginSignup_link a:hover {
+    text-decoration: underline;
+}
+
+#loginDesignHeader p {
+    color: red;
+    font-size: 13px;
+}
+
+
+/*Homepage*/
+/* CSS */
+
+#bodyHomepage * {
+    box-sizing: border-box;
+}
+
+#bodyHomepage {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+#bodyHomepage .mySlides {
+    display: none;
+}
+
+#bodyHomepage .numbertext img {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+}
+
+/*Homepage slideshow*/
+.slideshow-container img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+#bodyHomepage .slideshow-container {
+    max-width: 100vw;
+    position: relative;
+    border-bottom:1px solid #734b6d;
+    height:100%;
+    border-radius: 3%;
+}
+/* Homepage next & previous buttons */
+
+#bodyHomepage .prev,
+#bodyHomepage .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position next button to our right */
+
+#bodyHomepage .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*design of prev and next buttons upon hover*/
+
+#bodyHomepage .prev:hover,
+#bodyHomepage .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#bodyHomepage .active {
+    background-color: #734b6d;
+}
+
+/* fading animation */
+
+#bodyHomepage .fade {
+    animation-name: fade;
+    animation-duration: 7s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.mainContainer {
+    display: flex;
+}
+
+.homepageProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: solid 1px #EAEAEA;
+    border-bottom: #734b6d 2px solid;
+    border-top: #734b6d 2px solid;
+    border-radius: 3%;
+    margin: 10px;
+    background-color: white;
+}
+
+.homepageProfile>p {
+    margin-bottom: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px;
+    background-color: white;
+}
+
+.homepageProfile>img {
+    width: 100px;
+    border-radius: 100%;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 2%;
+}
+
+#homepageProgressCredits {
+    margin-top: 5px;
+    border: 1px solid #EAEAEA;
+    border-radius: 13px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+#homepageProgressCredits>div {
+    background-color: #734b6d;
+    width: 70%;
+    /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
+    text-align: end;
+    padding-right: 10px;
+    color: white;
+}
+
+#homepageProgressCredits>p {
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+#homepageProfileFirstP {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #734b6d;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+#homepageBeginningSection{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px 15px;
+    
+}
+
+#homepageProfileAside{
+    height:auto;
+}
+
+@media(max-width: 1067px) {
+    #homepageBeginningSection{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
+
+
+/*Homepage Announcement Section*/
+
+.classicSection h2{
+    color:#734b6d;
+    margin-bottom:15px;
+}
+
+#homepageNews{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom:40px;
+}
+
+#homepageNews .homepageCard{
+    max-width:22%;
+    padding-bottom:20px;
+}
+
+#homepageNews .homepageCard img{
+    max-width:100%;
+    margin-bottom:10px;
+    border-radius:3%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    height:225px;
+    width:100%;
+}
+
+
+
+.homepageCard p, .homepageCard h4{
+    padding: 0px 10px;
+}
+
+.homepageCard .homepageNormalP{
+    font-size:14px;
+}
+
+.homepageDate{
+    font-size:10px;
+    color:grey;
+}
+
+.homepageCard{
+    border-radius:3%;
+    box-shadow: 5px 5px 5px #EAEAEA;
+    border-left: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA;
+    position:relative;
+}
+
+.homepageReadMore{
+    font-size:14px;
+    text-decoration: underline;
+    color:blue;
+    align-self: flex-end;
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+ 
+@media(max-width: 847px) {
+    #homepageNews {
+        display: block;
+    }
+
+    #homepageNews .homepageCard{
+        max-width:100%;
+        padding-bottom:30px;
+        margin-bottom:20px;
+    }
+} 
+
+@media(max-width: 820px) and (max-height:1180px) {
+    #homepageNews {
+        display: block;
+    }
+
+    #homepageNews .homepageCard{
+        margin: auto;
+        max-width:50%;
+        padding-bottom:30px;
+        margin-bottom:20px;
+    }
+
+    #bodyHomepage .classicSection h2{
+        text-align:center;
+    }
+
+    #bodyHomepage .classicSection{
+        padding-left:0px;
+        padding-right:0px;
+        width:500px;
+        margin: 0 auto;
+    }
+} 
+
