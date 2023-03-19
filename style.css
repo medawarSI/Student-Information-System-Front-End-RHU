@@ -14,7 +14,7 @@
 }
 
 .classicSection{
-    border-top:#734b6d 1px solid;
+    border-top:#734b6d 2px solid;
     border-radius: 3%;
 }
 
@@ -23,15 +23,24 @@
 }
 
 footer {
-    margin-top: 500px;
     background-color: rgb(49, 49, 49);
-    text-align: center;
     color: white;
     padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
 footer p {
     font-size: 12px;
+}
+
+#footerSocials img{
+    width:25px;
+    height:25px;
+}
+#footerSocials p{
+    text-align: center;
 }
 
 .mainNav {
@@ -549,7 +558,7 @@ form .txt_field {
 
 .homepageCard{
     border-radius:3%;
-    box-shadow: 5px 5px 5px #EAEAEA;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-left: 1px solid #EAEAEA;
     border-top: 1px solid #EAEAEA;
     position:relative;
@@ -598,6 +607,135 @@ form .txt_field {
         padding-right:0px;
         width:500px;
         margin: 0 auto;
+        margin-bottom:20px;
     }
 } 
 
+
+/*Homepage Calendar*/
+#homepageCalendarAside table {
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    border-spacing: 10px 0;
+    border:1px solid #EAEAEA;
+    max-width:50%;
+}
+#homepageCalendarAside th, #homepageCalendarAside td { 
+    font-weight: bold;
+    padding:5px 2px;
+    text-align:center;
+    font-size:10px;
+}
+#homepageCalendarAside th{
+    color:white;
+    background:purple;
+}
+#homepageCalendarAside h3{
+    color: #734b6d;
+    margin-bottom:10px;
+}
+#homepageCalendarAside{
+    background-color: white;
+    padding:15px;
+    border-top:#734b6d 2px solid;
+    border-radius:3%;
+    margin:20px;
+    margin-right:-5px;
+}
+#homepageCalendarAside h4{
+    text-align: center;
+}
+
+#homepageCalendarAside .highlight{
+    background-color:#EAEAEA;
+    color:black;
+}
+
+#homepageCalendarAside .notInMonth{
+    color:gray;
+}
+
+#homepageAfterNews{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#homepageAfterNews section{
+    width:77.5%;
+}
+
+/*Homepage Shortcuts*/
+#homepageShortcutsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#homepageCalendarAside{
+    width:fit-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#homepageShortcutsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.homepageShortcut{
+    margin-right:10px;
+    max-width:15%;
+    width:15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom:23px;
+}
+.homepageShortcut p{
+    font-size:14px;
+}
+.homepageShortcut img{
+    width:75px;
+    height:75px;
+}
+
+#homepageLogoShortcutRHU{
+    border-radius: 100%;
+}
+
+@media(max-width: 847px) {
+    #homepageCalendarAside {
+        margin-bottom:20px;
+    }
+
+    #homepageNewsMain{
+        max-width:100%;
+    }
+
+    .homepageShortcut{
+        max-width:50%;
+        width:50%;
+    }
+
+} 
+
+#homepageSectionShortcuts{
+    margin-bottom:30px;
+}
+
+@media(max-width: 1918px) {
+    #homepageAfterNews{
+        justify-content: center;
+    }
+
+    #homepageSectionShortcuts{
+        margin-bottom: 50px;
+    }
+
+} 
