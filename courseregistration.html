@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bodyRegister">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarOverride">
+        <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" alt="RHU" class="overrideLogo"></a>
+
+        <button class="navbar-toggler overrideToggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="homepage.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle overrideNavItem" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Academics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="gpa.html">GPA</a>
+                        <a class="dropdown-item" href="#">Study Plan</a>
+                        <a class="dropdown-item" href="courseregistration.html">Course Registration</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="#">Files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="classicArticle">
+
+        <article id="registerControls">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Courses"
+                    aria-label="Courses" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Search</button>
+                </div>
+            </div>
+        </article>
+        <article id="registerTable">
+            <div class="table-responsive">
+                <table data-toggle="table" id="registerTable" class="table" DATA-URL="" data-sort-name="PR_x0020_Spec"
+                    data-sort-order="desc">
+                    <thead>
+                        <tr>
+                            <th data-sortable="true"> Course #</th>
+                            <th data-sortable="true">Sec</th>
+                            <th data-sortable="true">Course Title</th>
+                            <th data-sortable="true">Cr</th>
+                            <th data-sortable="true">Days</th>
+                            <th data-sortable="true">StartTime</th>
+                            <th data-sortable="true">EndTime</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="registerbtns">
+                <button id="registerbtnFirst">&#10229;</button>
+                <button id="registerbtnOne" class="homepageActivated">1</button>
+                <button id="registerbtnTwo">2</button>
+                <button id="registerbtnThree">3</button>
+                <button id="registerbtnFour">4</button>
+                <button id="registerbtnFive">5</button>
+                <button id="registerbtnSix">6</button>
+                <button id="registerbtnSeven">7</button>
+                <button id="registerbtnEight">8</button>
+                <button id="registerbtnNine">9</button>
+                <button id="registerbtnLast">&#10230;</button>
+            </div>
+        </article>
+    </section>
+
+
+
+    <footer>
+        <p>Rafik Hariri University &copy2023 All rights reserved </p>
+        <div id="footerSocials">
+            <p>Follow Us On</p>
+            <div>
+                <a href="https://www.linkedin.com/school/rafik-hariri-university/" target="_blank"><img
+                        src="images/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/rhu.lebanon/" target="_blank"><img src="images/instagram.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
