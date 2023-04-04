@@ -81,23 +81,11 @@
     "Prerequisites": " Co-req.: ENGL 210"
   },
 
-  {
-    "Course #": " ARAB 212",
-    "Title": "Arabic Language and Communication",
-    "Credits": 2,
-    "Prerequisites": " -"
-  },
+ 
 
   {
     "Course #": " ",
     "Title": "Humanities/Fine Arts Elective",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-
-  {
-    "Course #": " COSC 333",
-    "Title": "Web Programming",
     "Credits": 3,
     "Prerequisites": " -"
   },
@@ -108,6 +96,15 @@
     "Credits": 3,
     "Prerequisites": " COSC 215"
   },
+
+  {
+    "Course #": " COSC 333",
+    "Title": "Web Programming",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+
+ 
 
   {
     "Course #": " COSC 360",
@@ -178,9 +175,13 @@
     "Credits": 1,
     "Prerequisites": " ENGL 217; Senior Standing"
   },
+			
+		
+			
+	
 
   {
-    "Course #": "COSC 316 ",
+    "Course #": "COSC 353",
     "Title": "Design and Analysis of Algorithms",
     "Credits": 3,
     "Prerequisites": "COSC 215"
@@ -188,36 +189,64 @@
 
   {
     "Course #": " COSC 333",
-    "Title": "CS Major Elective II",
-    "Credits": 3,
-    "Prerequisites": " -"
+    "Title": "Computer Organization",
+    "Credits": 3	,
+    "Prerequisites": " COSC 351"
+  },
+
+  {
+    "Course #": "COSC 451 ",
+    "Title": "Operating Systems",
+    "Credits": 3		,
+    "Prerequisites": "COSC 214"
+  },
+
+  {
+    "Course #": "GRDS 440 ",
+    "Title": "Design and Social Impact",
+    "Credits": 3	,
+    "Prerequisites": " Junior Standing"
+  },
+
+  {
+    "Course #": "COSC 421",
+    "Title": "Theory of Computation",
+    "Credits": 	3	,
+    "Prerequisites": "MATH 210 "
   },
 
   {
     "Course #": " ",
-    "Title": "CS Major Elective II",
-    "Credits": 3,
+    "Title": "Social Sciences/Culture Elective II",
+    "Credits": 3	,
     "Prerequisites": " -"
+  },
+ 	
+  {
+    "Course #": " BMGT 300",
+    "Title": "Project Management",
+    "Credits": 		3		,
+    "Prerequisites": "Junior Standing "
+  },
+  {
+    "Course #": "COSC 490",
+    "Title": "Summative Learning Experience",
+    "Credits": 		3		,
+    "Prerequisites": "ENGL 217 "
   },
 
   {
-    "Course #": " ",
-    "Title": "CS Major Elective II",
-    "Credits": 3,
-    "Prerequisites": " -"
+    "Course #": "MATH 421",
+    "Title": "Numerical Analysis",
+    "Credits": 		3	,
+    "Prerequisites": "MATH 311 "
   },
 
   {
-    "Course #": " ",
-    "Title": "CS Major Elective II",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-
-  {
-    "Course #": " ",
-    "Title": "CS Major Elective II",
-    "Credits": 3,
-    "Prerequisites": " -"
+    "Course #": "",
+    "Title": "CS Major Elective III",
+    "Credits": 		3	,
+    "Prerequisites": "-"
   }
+
 ]
