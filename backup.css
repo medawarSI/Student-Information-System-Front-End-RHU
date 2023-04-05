@@ -870,25 +870,6 @@ form .txt_field {
     padding: 10px;
 }
 
-.gpaSemesterInputsLineOneObject {
-    display: flex;
-    align-items: center;
-}
-
-.gpaSemesterInputsLineOneObject h5 {
-    font-size: 18px;
-}
-
-#gpaInputGrade,
-#gpaInputCredit {
-    padding: 5px;
-    color: black;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-    opacity: 1
-}
-
 
 @media(max-width: 992px) {
     #gpaMainContainer section {
@@ -990,6 +971,7 @@ input[type=number]::-webkit-inner-spin-button {
 #gpaMainContainer table tr:nth-child(even),
 #registerTable table tr:nth-child(even) {
     background-color: rgb(247, 247, 247);
+    ;
 }
 
 #gpaMainContainer .gpaGradeTableContainer th,
@@ -1033,150 +1015,4 @@ input[type=number]::-webkit-inner-spin-button {
 #registerControls .btn:focus {
     border: none !important;
     box-shadow: none !important;
-}
-
-.registerButtonCourseControl {
-    border: none;
-    background: transparent;
-    color: #734b6d;
-    font-size: 20px;
-}
-
-.registerButtonCourseControl:hover {
-    color: green;
-    font-weight: bold;
-}
-
-.registerRadios .form-check {
-    color: #734b6d;
-    font-weight: bold;
-}
-
-.registerRadios .form-check {
-    padding-left: 0px;
-}
-
-.registerRadios {
-    margin-top: 10px;
-    margin-left: 20px;
-    display: flex;
-}
-
-.registerRadios .form-check {
-    margin-right: 30px;
-}
-
-.scheduled {
-    background-color: #f9f777 !important;
-}
-
-.scheduled .registerButtonCourseControl:hover {
-    color: red !important;
-}
-
-.confirmed {
-    background-color: #add8e6 !important;
-}
-
-.confirmed .registerButtonCourseControl:hover {
-    color: red !important;
-}
-
-.registerUserControls button,
-#gpaMainContainer #gpaButtonDo {
-    border: none;
-    background-color: #734b6d;
-    color: white;
-    padding: 8px;
-    border-radius: 5%;
-}
-
-.registerUserControls button:hover {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#bodyRegister .classicArticle .registerYourControls button {
-    border: none;
-    background-color: #734b6d;
-    color: white;
-    padding: 8px;
-}
-
-.registerYourControls button:hover {
-    font-weight: bold;
-}
-
-.registerYourControls {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.registerCredits {
-    margin-top: 20px;
-    display: flex;
-}
-
-.registerCredits h6:first-child {
-    color: #734b6d;
-    font-weight: bold;
-}
-
-.registerYourControls .input-group {
-    margin-bottom: 20px;
-}
-
-#bodyRegister footer {
-    margin-top: 400px;
-}
-
-.table-responsive tbody tr:nth-child(even) {
-    background-color: #EAEAEA;
-}
-
-.registerButtonCourseControl:active,
-.registerButtonCourseControl:focus {
-    border: none !important;
-    outline: none !important;
-}
-
-@media(max-width: 950px) {
-    #bodyRegister section {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    #bodyRegister .classicArticle:nth-child(2) {
-        overflow: scroll;
-    }
-
-    .registerRadios {
-        margin-top: 10px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-end;
-        min-width:100%;
-
-    }
-
-    #bodyRegister .classicArticle #registerControls:first-child{
-        min-width:100%;
-    }
-
-}
-
-#registerButtonQuickAdd{
-    border-radius:3% !important;
-}
-#registerInputCourseNumber, #registerInputCourseSection, #registerButtonCommit{
-    min-height:49px;
-    border-radius:3% !important;
-}
-
-#registerCoursesSearch{
-    min-height:49px;
 }

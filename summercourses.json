@@ -8,7 +8,8 @@
         "StartTime": "9:25:00 AM",
         "EndTime": "10:54:00 AM",
         "Room": "B204",
-        "Faculty": "Dina Baba"
+        "Faculty": "Dina Baba",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ARAB212",
@@ -19,7 +20,8 @@
         "StartTime": "7:55:00 AM",
         "EndTime": "9:24:00 AM",
         "Room": "B204",
-        "Faculty": "Dina Baba"
+        "Faculty": "Dina Baba",
+        "Seats": "0"
     },
     {
         "CourseNbr": "BACC205",
@@ -30,7 +32,8 @@
         "StartTime": "9:30:00 AM",
         "EndTime": "10:45:00 AM",
         "Room": "H203",
-        "Faculty": "Rima Hakim"
+        "Faculty": "Rima Hakim",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BACC255",
@@ -41,7 +44,8 @@
         "StartTime": "12:30:00 PM",
         "EndTime": "1:45:00 PM",
         "Room": "H204",
-        "Faculty": "Rima Hakim"
+        "Faculty": "Rima Hakim",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BADM250",
@@ -52,21 +56,24 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:15:00 PM",
         "Room": "G LAB1",
-        "Faculty": "Adel Saheb"
+        "Faculty": "Adel Saheb",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BADM290",
         "Sec": 1,
         "CourseTitle": "Community Engagement Experience",
         "Cr": 0,
-        "Faculty": "Staff Staff"
+        "Faculty": "Staff Staff",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BADM485",
         "Sec": 1,
         "CourseTitle": "Co-op Work Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BFIN300",
@@ -77,7 +84,8 @@
         "StartTime": "9:30:00 AM",
         "EndTime": "10:45:00 AM",
         "Room": "H202",
-        "Faculty": "Zeinab Srour"
+        "Faculty": "Zeinab Srour",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BIOL210",
@@ -88,7 +96,8 @@
         "StartTime": "10:55:00 AM",
         "EndTime": "12:24:00 PM",
         "Room": "H204",
-        "Faculty": "Mahmoud Halablab"
+        "Faculty": "Mahmoud Halablab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BIOL210",
@@ -99,7 +108,8 @@
         "StartTime": "9:25:00 AM",
         "EndTime": "10:54:00 AM",
         "Room": "H204",
-        "Faculty": "Mahmoud Halablab"
+        "Faculty": "Mahmoud Halablab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BIOL210L",
@@ -110,7 +120,8 @@
         "StartTime": "9:25:00 AM",
         "EndTime": "10:54:00 AM",
         "Room": "B103",
-        "Faculty": "Roba AlHajj"
+        "Faculty": "Roba AlHajj",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BIOL210L",
@@ -121,7 +132,8 @@
         "StartTime": "12:25:00 PM",
         "EndTime": "1:54:00 PM",
         "Room": "B103",
-        "Faculty": "Mahmoud Halablab"
+        "Faculty": "Mahmoud Halablab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BIOL210L",
@@ -132,7 +144,8 @@
         "StartTime": "10:55:00 AM",
         "EndTime": "12:24:00 PM",
         "Room": "B103",
-        "Faculty": "Roba AlHajj"
+        "Faculty": "Roba AlHajj",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BIOL210L",
@@ -143,14 +156,16 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:30:00 PM",
         "Room": "B103",
-        "Faculty": "Roba AlHajj"
+        "Faculty": "Roba AlHajj",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BIOM499",
         "Sec": 1,
         "CourseTitle": "COOP Work Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BMGT300",
@@ -161,7 +176,8 @@
         "StartTime": "11:00:00 AM",
         "EndTime": "12:15:00 PM",
         "Room": "H202",
-        "Faculty": "Mohamad Majzoub"
+        "Faculty": "Mohamad Majzoub",
+        "Seats": "30"
     },
     {
         "CourseNbr": "BMKA200",
@@ -172,7 +188,8 @@
         "StartTime": "8:00:00 AM",
         "EndTime": "9:15:00 AM",
         "Room": "H202",
-        "Faculty": "Marwan Wehbe"
+        "Faculty": "Marwan Wehbe",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CCEE221",
@@ -183,7 +200,8 @@
         "StartTime": "11:00:00 AM",
         "EndTime": "12:15:00 PM",
         "Room": "B204",
-        "Faculty": "Mohamad Diab"
+        "Faculty": "Mohamad Diab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CCEE221L",
@@ -194,7 +212,8 @@
         "StartTime": "10:55:00 AM",
         "EndTime": "12:25:00 PM",
         "Room": "ElectLab",
-        "Faculty": "Amal Arid"
+        "Faculty": "Amal Arid",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CCEE221L",
@@ -205,7 +224,8 @@
         "StartTime": "10:55:00 AM",
         "EndTime": "12:25:00 PM",
         "Room": "ElectLab",
-        "Faculty": "Amal Arid"
+        "Faculty": "Amal Arid",
+        "Seats": "0"
     },
     {
         "CourseNbr": "CCEE221L",
@@ -216,14 +236,16 @@
         "StartTime": "9:25:00 AM",
         "EndTime": "10:54:00 AM",
         "Room": "H204",
-        "Faculty": "Milana Kassab"
+        "Faculty": "Milana Kassab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CCEE499",
         "Sec": 1,
         "CourseTitle": "Coop Work Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CHEM211",
@@ -234,7 +256,8 @@
         "StartTime": "9:25:00 AM",
         "EndTime": "10:54:00 AM",
         "Room": "H204",
-        "Faculty": "Mahmoud Halablab"
+        "Faculty": "Mahmoud Halablab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CHEM211",
@@ -245,7 +268,8 @@
         "StartTime": "10:55:00 AM",
         "EndTime": "12:24:00 PM",
         "Room": "H204",
-        "Faculty": "Mahmoud Halablab"
+        "Faculty": "Mahmoud Halablab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CHEM211L",
@@ -256,7 +280,8 @@
         "StartTime": "10:55:00 AM",
         "EndTime": "12:24:00 PM",
         "Room": "B103",
-        "Faculty": "Roba AlHajj"
+        "Faculty": "Roba AlHajj",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CHEM211L",
@@ -267,7 +292,8 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:30:00 PM",
         "Room": "B103",
-        "Faculty": "Roba AlHajj"
+        "Faculty": "Roba AlHajj",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CHEM211L",
@@ -278,7 +304,8 @@
         "StartTime": "9:25:00 AM",
         "EndTime": "10:54:00 AM",
         "Room": "B103",
-        "Faculty": "Roba AlHajj"
+        "Faculty": "Roba AlHajj",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CHEM211L",
@@ -289,7 +316,8 @@
         "StartTime": "12:25:00 PM",
         "EndTime": "1:54:00 PM",
         "Room": "B103",
-        "Faculty": "Roba AlHajj"
+        "Faculty": "Roba AlHajj",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CIVE240",
@@ -300,14 +328,16 @@
         "StartTime": "9:30:00 AM",
         "EndTime": "10:45:00 AM",
         "Room": "F103",
-        "Faculty": "Riad Wardany"
+        "Faculty": "Riad Wardany",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CIVE499",
         "Sec": 1,
         "CourseTitle": "Co-op Work Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CMNS200",
@@ -318,7 +348,8 @@
         "StartTime": "12:30:00 PM",
         "EndTime": "1:45:00 PM",
         "Room": "H102",
-        "Faculty": "Mirna Talhouk"
+        "Faculty": "Mirna Talhouk",
+        "Seats": "30"
     },
     {
         "CourseNbr": "CMNS401",
@@ -330,14 +361,16 @@
         "EndTime": "3:15:00 PM",
         "Room": "H205",
         "Faculty": "Ibrahim Jouhari",
-        "Remarks": "Social Science"
+        "Remarks": "Social Science",
+        "Seats": "30"
     },
     {
         "CourseNbr": "COSC 399",
         "Sec": 1,
         "CourseTitle": "COOP Work Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "0"
     },
     {
         "CourseNbr": "COSC214",
@@ -348,7 +381,8 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:30:00 PM",
         "Room": "I228",
-        "Faculty": "Ali Rammal"
+        "Faculty": "Ali Rammal",
+        "Seats": "30"
     },
     {
         "CourseNbr": "COSC215",
@@ -359,7 +393,8 @@
         "StartTime": "7:55:00 AM",
         "EndTime": "9:24:00 AM",
         "Room": "C LAB III",
-        "Faculty": "Ali Rammal"
+        "Faculty": "Ali Rammal",
+        "Seats": "30"
     },
     {
         "CourseNbr": "EDUC201",
@@ -371,24 +406,20 @@
         "EndTime": "9:15:00 AM",
         "Room": "H203",
         "Faculty": "Maysaa Banat",
-        "Remarks": "Humanities"
+        "Remarks": "Humanities",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ELEC201",
         "Sec": 1,
         "CourseTitle": "Introduction to Electrical and Computer Engineering",
         "Cr": 2,
-        "DAYS": "T",
+        "DAYS": "TR",
         "StartTime": "9:25:00 AM",
         "EndTime": "10:55:00 AM",
-        "Room": "C Lab IV",
-        "Faculty": "Milana Kassab"
-    },
-    {
-        "DAYS": "R",
-        "StartTime": "9:25:00 AM",
-        "EndTime": "10:55:00 AM",
-        "Room": "ElectLab"
+        "Room": "C Lab IV | ElectLab",
+        "Faculty": "Milana Kassab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ELEC210",
@@ -399,14 +430,16 @@
         "StartTime": "12:30:00 PM",
         "EndTime": "1:45:00 PM",
         "Room": "H104",
-        "Faculty": "Mohammad Taha"
+        "Faculty": "Mohammad Taha",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ELEC499",
         "Sec": 1,
         "CourseTitle": "Co-op Work Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGL 101",
@@ -417,7 +450,8 @@
         "StartTime": "8:00:00 AM",
         "EndTime": "9:15:00 AM",
         "Room": "H204",
-        "Faculty": "Leen Srouji"
+        "Faculty": "Leen Srouji",
+        "Seats": "0"
     },
     {
         "CourseNbr": "ENGL 101",
@@ -428,7 +462,8 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:15:00 PM",
         "Room": "H203",
-        "Faculty": "Rola AlDanab"
+        "Faculty": "Rola AlDanab",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGL210",
@@ -439,7 +474,8 @@
         "StartTime": "9:30:00 AM",
         "EndTime": "10:45:00 AM",
         "Room": "F102",
-        "Faculty": "Leen Srouji"
+        "Faculty": "Leen Srouji",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGL210",
@@ -450,7 +486,8 @@
         "StartTime": "12:30:00 PM",
         "EndTime": "1:45:00 PM",
         "Room": "H103",
-        "Faculty": "Leen Srouji"
+        "Faculty": "Leen Srouji",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGL210",
@@ -461,7 +498,8 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:15:00 PM",
         "Room": "H204",
-        "Faculty": "Rima Abdallah"
+        "Faculty": "Rima Abdallah",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGL217",
@@ -472,7 +510,8 @@
         "StartTime": "8:00:00 AM",
         "EndTime": "9:15:00 AM",
         "Room": "B203",
-        "Faculty": "Mira Alameddine"
+        "Faculty": "Mira Alameddine",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGL217",
@@ -483,7 +522,8 @@
         "StartTime": "11:00:00 AM",
         "EndTime": "12:15:00 PM",
         "Room": "H104",
-        "Faculty": "Mira Alameddine"
+        "Faculty": "Mira Alameddine",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGL217",
@@ -494,7 +534,8 @@
         "StartTime": "11:00:00 AM",
         "EndTime": "12:15:00 PM",
         "Room": "H203",
-        "Faculty": "Maysaa Banat"
+        "Faculty": "Maysaa Banat",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGR300",
@@ -505,7 +546,8 @@
         "StartTime": "9:30:00 AM",
         "EndTime": "10:45:00 AM",
         "Room": "B203",
-        "Faculty": "Mohamad Tarabay"
+        "Faculty": "Mohamad Tarabay",
+        "Seats": "0"
     },
     {
         "CourseNbr": "ENGR300",
@@ -516,7 +558,8 @@
         "StartTime": "11:00:00 AM",
         "EndTime": "12:15:00 PM",
         "Room": "B203",
-        "Faculty": "Mohamad Tarabay"
+        "Faculty": "Mohamad Tarabay",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGR300",
@@ -527,7 +570,8 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:15:00 PM",
         "Room": "H104",
-        "Faculty": "Mohamad Tarabay"
+        "Faculty": "Mohamad Tarabay",
+        "Seats": "30"
     },
     {
         "CourseNbr": "ENGR510",
@@ -538,7 +582,8 @@
         "StartTime": "8:00:00 AM",
         "EndTime": "9:15:00 AM",
         "Room": "H205",
-        "Faculty": "Mohamad Majzoub"
+        "Faculty": "Mohamad Majzoub",
+        "Seats": "30"
     },
     {
         "CourseNbr": "GRDS203",
@@ -549,7 +594,8 @@
         "StartTime": "8:00:00 AM",
         "EndTime": "9:50:00 AM",
         "Room": "I216",
-        "Faculty": "Serene Srouji"
+        "Faculty": "Serene Srouji",
+        "Seats": "0"
     },
     {
         "CourseNbr": "GRDS203",
@@ -560,7 +606,8 @@
         "StartTime": "12:30:00 PM",
         "EndTime": "2:20:00 PM",
         "Room": "I216",
-        "Faculty": "Serene Srouji"
+        "Faculty": "Serene Srouji",
+        "Seats": "30"
     },
     {
         "CourseNbr": "GRDS230",
@@ -572,7 +619,8 @@
         "EndTime": "9:15:00 AM",
         "Room": "IPLAB",
         "Faculty": "Saber Abdallah",
-        "Remarks": "Fine Arts"
+        "Remarks": "Fine Arts",
+        "Seats": "30"
     },
     {
         "CourseNbr": "GRDS230",
@@ -584,7 +632,8 @@
         "EndTime": "10:45:00 AM",
         "Room": "IPLAB",
         "Faculty": "Saber Abdallah",
-        "Remarks": "Fine Arts"
+        "Remarks": "Fine Arts",
+        "Seats": "30"
     },
     {
         "CourseNbr": "GRDS230",
@@ -596,7 +645,8 @@
         "EndTime": "12:15:00 PM",
         "Room": "IPLAB",
         "Faculty": "Saber Abdallah",
-        "Remarks": "Fine Arts"
+        "Remarks": "Fine Arts",
+        "Seats": "30"
     },
     {
         "CourseNbr": "GRDS360",
@@ -607,21 +657,24 @@
         "StartTime": "9:30:00 AM",
         "EndTime": "10:45:00 AM",
         "Room": "ILABVI",
-        "Faculty": "Noura Sammoura"
+        "Faculty": "Noura Sammoura",
+        "Seats": "30"
     },
     {
         "CourseNbr": "GRDS399",
         "Sec": 1,
         "CourseTitle": "Co-op Training Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "0"
     },
     {
         "CourseNbr": "HCIS399",
         "Sec": 1,
         "CourseTitle": "Co-op Training Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "30"
     },
     {
         "CourseNbr": "HIST480V",
@@ -633,7 +686,8 @@
         "EndTime": "1:45:00 PM",
         "Room": "H205",
         "Faculty": "Ibrahim Jouhari",
-        "Remarks": "Humanities"
+        "Remarks": "Humanities",
+        "Seats": "30"
     },
     {
         "CourseNbr": "IELP095",
@@ -644,7 +698,8 @@
         "StartTime": "9:00:00 AM",
         "EndTime": "3:15:00 PM",
         "Room": "F101",
-        "Faculty": "Grasiella Harb"
+        "Faculty": "Grasiella Harb",
+        "Seats": "30"
     },
     {
         "CourseNbr": "IELP100",
@@ -655,12 +710,8 @@
         "StartTime": "11:00:00 AM",
         "EndTime": "12:15:00 PM",
         "Room": "F102",
-        "Faculty": "Staff Staff"
-    },
-    {
-        "DAYS": "MTWR",
-        "StartTime": "2:00:00 PM",
-        "EndTime": "3:15:00 PM"
+        "Faculty": "Staff Staff",
+        "Seats": "30"
     },
     {
         "CourseNbr": "IELP100",
@@ -671,12 +722,8 @@
         "StartTime": "11:00:00 AM",
         "EndTime": "12:15:00 PM",
         "Room": "F103",
-        "Faculty": "Dina Baba"
-    },
-    {
-        "DAYS": "MTWR",
-        "StartTime": "2:00:00 PM",
-        "EndTime": "3:15:00 PM"
+        "Faculty": "Dina Baba",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MATH210",
@@ -687,7 +734,8 @@
         "StartTime": "11:00:00 AM",
         "EndTime": "12:15:00 PM",
         "Room": "H102",
-        "Faculty": "Husam Salami"
+        "Faculty": "Husam Salami",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MATH211",
@@ -698,7 +746,8 @@
         "StartTime": "9:25:00 AM",
         "EndTime": "10:54:00 AM",
         "Room": "H103",
-        "Faculty": "Lara AbouOrm"
+        "Faculty": "Lara AbouOrm",
+        "Seats": "0"
     },
     {
         "CourseNbr": "MATH311",
@@ -709,7 +758,8 @@
         "StartTime": "8:00:00 AM",
         "EndTime": "9:15:00 AM",
         "Room": "H103",
-        "Faculty": "Mohamad ElGhor"
+        "Faculty": "Mohamad ElGhor",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MATH317",
@@ -720,7 +770,8 @@
         "StartTime": "8:00:00 AM",
         "EndTime": "9:15:00 AM",
         "Room": "H102",
-        "Faculty": "Lara AbouOrm"
+        "Faculty": "Lara AbouOrm",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MATH317",
@@ -731,7 +782,8 @@
         "StartTime": "9:30:00 AM",
         "EndTime": "10:45:00 AM",
         "Room": "H104",
-        "Faculty": "Mohamad Wehbe"
+        "Faculty": "Mohamad Wehbe",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MATH351",
@@ -742,7 +794,8 @@
         "StartTime": "9:30:00 AM",
         "EndTime": "10:45:00 AM",
         "Room": "H102",
-        "Faculty": "Mohamad ElGhor"
+        "Faculty": "Mohamad ElGhor",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MATH421",
@@ -753,7 +806,8 @@
         "StartTime": "12:30:00 PM",
         "EndTime": "1:45:00 PM",
         "Room": "C Lab IV",
-        "Faculty": "Mohamad Wehbe"
+        "Faculty": "Mohamad Wehbe",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MATH421",
@@ -764,14 +818,16 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:15:00 PM",
         "Room": "C Lab IV",
-        "Faculty": "Mohamad Wehbe"
+        "Faculty": "Mohamad Wehbe",
+        "Seats": "0"
     },
     {
         "CourseNbr": "MECA499",
         "Sec": 1,
         "CourseTitle": "Co-op Work Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MECH224",
@@ -782,7 +838,8 @@
         "StartTime": "12:30:00 PM",
         "EndTime": "1:45:00 PM",
         "Room": "C LAB III",
-        "Faculty": "Omar Berjawi"
+        "Faculty": "Omar Berjawi",
+        "Seats": "30"
     },
     {
         "CourseNbr": "MECH224",
@@ -793,14 +850,16 @@
         "StartTime": "2:00:00 PM",
         "EndTime": "3:15:00 PM",
         "Room": "C LAB III",
-        "Faculty": "Omar Berjawi"
+        "Faculty": "Omar Berjawi",
+        "Seats": "0"
     },
     {
         "CourseNbr": "MECH499",
         "Sec": 1,
         "CourseTitle": "Co-op Work Experience",
         "Cr": 1,
-        "Faculty": "Placement and Coop Office"
+        "Faculty": "Placement and Coop Office",
+        "Seats": "30"
     },
     {
         "CourseNbr": "PHIL480II",
@@ -812,7 +871,8 @@
         "EndTime": "12:15:00 PM",
         "Room": "H103",
         "Faculty": "Fatima Shamdeen",
-        "Remarks": "Humanities"
+        "Remarks": "Humanities",
+        "Seats": "30"
     },
     {
         "CourseNbr": "PHYS312",
@@ -823,7 +883,8 @@
         "StartTime": "8:00:00 AM",
         "EndTime": "9:15:00 AM",
         "Room": "H104",
-        "Faculty": "Husam Salami"
+        "Faculty": "Husam Salami",
+        "Seats": "30"
     },
     {
         "CourseNbr": "PHYS312",
@@ -834,7 +895,8 @@
         "StartTime": "12:30:00 PM",
         "EndTime": "1:45:00 PM",
         "Room": "H203",
-        "Faculty": "Husam Salami"
+        "Faculty": "Husam Salami",
+        "Seats": "30"
     },
     {
         "CourseNbr": "PSYC303",
@@ -846,7 +908,8 @@
         "EndTime": "10:45:00 AM",
         "Room": "H205",
         "Faculty": "Kamal Nahas",
-        "Remarks": "Social Science"
+        "Remarks": "Social Science",
+        "Seats": "30"
     },
     {
         "CourseNbr": "SOCI313",
@@ -858,7 +921,8 @@
         "EndTime": "12:15:00 PM",
         "Room": "H205",
         "Faculty": "Kamal Nahas",
-        "Remarks": "Social Science"
+        "Remarks": "Social Science",
+        "Seats": "30"
     },
     {
         "CourseNbr": "SOCI340",
@@ -870,6 +934,7 @@
         "EndTime": "1:45:00 PM",
         "Room": "H202",
         "Faculty": "Fatima Shamdeen",
-        "Remarks": "Social Science"
+        "Remarks": "Social Science",
+        "Seats": "0"
     }
 ]
