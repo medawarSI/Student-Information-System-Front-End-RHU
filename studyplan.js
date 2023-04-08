@@ -9,6 +9,7 @@ fetch("studyplan.json")
       const titleCell = document.createElement("td");
       const creditCell = document.createElement("td");
       const PrerequisitesCell = document.createElement("td");
+      const CheckBoxCell = document.createElement("td");
 
       courseCell.textContent = item.Coursecode;
 
@@ -22,9 +23,7 @@ fetch("studyplan.json")
       row.appendChild(titleCell);
       row.appendChild(creditCell);
       row.appendChild(PrerequisitesCell);
-      $(row).appendChild(
-        ' <td><input type="checkbox" class="checkboxstudyplan"></td>'
-      );
+      row.appendChild(CheckBoxCell);
 
       tbody.appendChild(row);
     });
