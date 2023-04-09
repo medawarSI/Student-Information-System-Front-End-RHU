@@ -9,6 +9,19 @@ $("#navLogout").click(function () {
 
 $(document).ready(function () {
   //Login Page
+  
+
+// let password = document.getElementById("txtLoginPassword")
+
+// password.addEventListener("keypress", function(event) {
+ 
+//   if (event.key === "Enter") {
+    
+//     event.preventDefault();
+    
+//     document.getElementById("btnLogin").click();
+//   }
+// });
   if (document.title == "RHU SIS") {
     hasBeenWrong = false; //variable to determine whether or not to remove past mistakes that are red
     let btnLogin = document.getElementById("btnLogin");
