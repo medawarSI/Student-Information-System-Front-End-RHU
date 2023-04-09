@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -18,6 +20,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -53,13 +57,14 @@
                     <a class="nav-link overrideNavItem" href="#">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link overrideNavItem" href="files2.html">Files</a>
+                    <a class="nav-link overrideNavItem" href="files.html">Files</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link overrideNavItem" href="#">Contact Us</a>
                 </li>
             </ul>
         </div>
+        <a href="index.html" id="navLogout">Logout</a>
     </nav>
 
     <section id="homepageSlideshow">
@@ -103,17 +108,18 @@
         <aside>
             <div class="homepageProfileContainer">
                 <div class="homepageProfile">
-                    <img src="images/profileimg.jpg" class="profileimg" />
-                    <p id="homepageProfileFirstP">Lara Mosby</p>
-                    <p>20202020</p>
-                    <p>Computer Science</p>
-                    <p>CGPA: 3.85</p>
-                    <p style="margin-bottom:10px;">Credits:</p>
+                    <img src="" alt="images/profileimg.jpg" class="profileimg" />
+                    <p id="homepageProfileFirstP" data-toggle="tooltip" data-placement="top" title="Your name"></p>
+                    <p data-toggle="tooltip" data-placement="top" title="Your student ID and username"></p>
+                    <p data-toggle="tooltip" data-placement="top" title="Your major"></p>
+                    <p data-toggle="tooltip" data-placement="top" title="Your CGPA"></p>
+                    <p style="margin-bottom:10px;" data-toggle="tooltip" data-placement="top"
+                        title="Your credits information">Credits:</p>
                     <div id="homepageProgressCredits">
-                        <div>
-                            <p>51</p>
+                        <div data-toggle="tooltip" data-placement="top" title="Credits you've completed">
+                            <p data-toggle="tooltip" data-placement="top" title="Credits you've completed"></p>
                         </div>
-                        <p>93</p>
+                        <p data-toggle="tooltip" data-placement="top" title="Total credits required"></p>
                     </div>
                     <br>
                 </div>
@@ -122,9 +128,9 @@
                 <div id="homepageCalendar">
                     <div class="homepageMonth">
                         <ul>
-                            <li class="prev">&#10094;</li>
-                            <li class="next">&#10095;</li>
-                            <li>March<br><span style="font-size:16px">2023</span></li>
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                            <li id="monthYear">March 2023</li>
                         </ul>
                     </div>
                     <ul class="homepageWeekdays">
@@ -136,56 +142,11 @@
                         <li>Sa</li>
                         <li>Su</li>
                     </ul>
-
-                    <ul class="homepageDays">
-                        <li style="color:lightgray;">27</li>
-                        <li style="color:lightgray;">28</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                        <li>10</li>
-                        <li>11</li>
-                        <li>12</li>
-                        <li class="active" data-toggle="tooltip" data-placement="top"
-                            title="Beginning of advising week">13</li>
-                        <li>14</li>
-                        <li>15</li>
-                        <li>16</li>
-                        <li class="active" data-toggle="tooltip" data-placement="top"
-                            title="End of advising week | Last day to withdraw from courses">17</li>
-                        <li>18</li>
-                        <li class="todayActive active" data-toggle="tooltip" data-placement="top" title="Today">19</li>
-                        <li class="active" data-toggle="tooltip" data-placement="top"
-                            title="First day of registration week">20</li>
-                        <li>21</li>
-                        <li>22</li>
-                        <li>23</li>
-                        <li>24</li>
-                        <li class="active" data-toggle="tooltip" data-placement="top" title="Annunciation holiday">25
-                        </li>
-                        <li>26</li>
-                        <li>27</li>
-                        <li class="active" data-toggle="tooltip" data-placement="top"
-                            title="Last day of registration week">28</li>
-                        <li>29</li>
-                        <li>30</li>
-                        <li>31</li>
-                        <li style="color:lightgray;">1</li>
-                        <li style="color:lightgray;">2</li>
-                    </ul>
+                    <ul class="homepageDays"></ul>
                 </div>
 
                 <div id="homepageUpcomingEvents">
-                    <p>Timeline: </p>
-                    <p><b>March 20:</b> First day of registration week</p>
-                    <p><b>March 25:</b> Annunciation Holiday</p>
-                    <p><b>March 28:</b> Last day of registration week</p>
+                    <p id="homepageTimeline">Timeline: </p>
                 </div>
             </div>
         </aside>
@@ -302,6 +263,7 @@
                     <button id="homepagebtnOne" class="homepageActivated">1</button>
                     <button id="homepagebtnTwo">2</button>
                     <button id="homepagebtnThree">3</button>
+
                 </div>
             </article>
 
@@ -388,6 +350,13 @@
             </div>
         </div>
     </footer>
+
+    <div class="cookies-eu-banner">
+        <p>This website uses cookies to save information about your ID and whether or not you have consented to using
+            cookies. If you do not consent, only the data of you not consenting will be saved.</p>
+        <button id="cookieAccept">Accept</button>
+        <button id="cookieReject">Reject</button>
+    </div>
 
     <script src="main.js"></script>
 
