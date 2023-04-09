@@ -13,6 +13,6 @@ Mustafa Harb
 Sammy Medawar  
 
 Resources:  
-Jquery
-Bootstrap 4
-JS-Cookie (https://github.com/js-cookie/js-cookie)
+Jquery  
+Bootstrap 4  
+JS-Cookie (https://github.com/js-cookie/js-cookie)  
