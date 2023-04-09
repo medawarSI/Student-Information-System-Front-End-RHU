@@ -142,9 +142,16 @@
         }
     </style>
 
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+    </script>
+
 </head>
 
 <body id="bodyFiles">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbarOverride">
         <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" alt="RHU" class="overrideLogo"></a>
 
@@ -180,9 +187,11 @@
                 <li class="nav-item">
                     <a class="nav-link overrideNavItem" href="#">Contact Us</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem"href="index.html" id="navLogout">Logout</a>
+                </li>
             </ul>
         </div>
-        <a href="index.html" id="navLogout">Logout</a>
     </nav>
 
     <div id="filesMainContainer">
@@ -205,8 +214,8 @@
                                                 </h4>
                                             </div>
                                             <div class="col-sm-3 col-xs-12">
-                                                <a href="" target="_blank" class="download"
-                                                    style="color: #734b6d">Download</a>
+                                                <a href="#" class="download" style="color: #734b6d"
+                                                    onclick="displayPDF(this)">Download</a>
                                             </div>
                                         </div>
                                     </div>
@@ -219,8 +228,8 @@
                                                 </h4>
                                             </div>
                                             <div class="col-sm-3 col-xs-12">
-                                                <a href="" target="_blank" class="download"
-                                                    style="color: #734b6d">Download</a>
+                                                <a href="#" class="download" style="color: #734b6d"
+                                                    onclick="displayPDF(this)">Download</a>
                                             </div>
                                         </div>
                                     </div>
@@ -420,8 +429,9 @@
                                                 </h4>
                                             </div>
                                             <div class="col-sm-3 col-xs-12">
-                                                <a href="" target="_blank" class="download"
-                                                    style="color: #734b6d">Download</a>
+                                                <a href="#" class="download" style="color: #734b6d"
+                                                    onclick="displayPDF(this)">Download</a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -553,6 +563,11 @@
 
                 </div>
         </article>
+    </div>
+
+
+    <div id="filesPDF" class="hidden">
+        <button onclick="closePDF(this)" id="minimizePDF">X</button>
     </div>
 
     <footer>

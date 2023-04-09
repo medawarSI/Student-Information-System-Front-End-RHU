@@ -1582,3 +1582,22 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+//files code
+function displayPDF(el) {
+  $("body>*:not(#filesPDF)").addClass("fileBodyHidden");
+  $("#filesPDF").removeClass("hidden");
+  $("#filesPDF").append("<iframe class='PDF' src='pdf files/tuition.pdf' frameborder='0'></iframe>");
+  $("#bodyFiles .download").each(function(){
+    $(this).addClass("disabledAnchor");
+  });
+}
+
+function closePDF(el){
+  $("body>*:not(#filesPDF)").removeClass("fileBodyHidden");
+  $("#filesPDF").addClass("hidden");
+  $("#filesPDF iframe").remove();
+  $("#bodyFiles .download").each(function(){
+    $(this).removeClass("disabledAnchor");
+  });
+}

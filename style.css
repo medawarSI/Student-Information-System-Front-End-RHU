@@ -32,9 +32,13 @@ body {
 }
 
 .overrideLogo {
-    height: 100%;
-    max-width: 100%;
+    height: 100% !important;
+    max-width: 100% !important;
 }
+.navbar-brand{
+    padding:0px !important;
+}
+
 
 
 .navbar a {
@@ -931,7 +935,8 @@ button.next:focus {
 #gpaAside td:not(:last-child) {
     border-right: 1px solid #734b6d;
 }
-#gpaAside th{
+
+#gpaAside th {
     text-align: center;
 }
 
@@ -1582,4 +1587,64 @@ input[type=number]::-webkit-inner-spin-button {
 
 #bodyFiles h4:nth-child(even) {
     background-color: rgb(247, 247, 247) !important;
+}
+
+#bodyFiles footer p {
+    width: fit-content;
+}
+
+#bodyFiles footer {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+}
+
+/* #bodyFiles #filesPDF h1{
+    border:1px solid red;
+    backdrop-filter: blur(10px);
+} */
+
+.fileBodyHidden {
+    filter: blur(3px);
+}
+
+#filesPDF {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height:700px;
+    width:85%;
+}
+
+.PDF {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:600px){
+    #filesPDF{
+        height:400px;
+    }
+}
+
+#filesPDF button{
+    border:none;
+    outline:none;
+    background-color: #734b6d;
+    color:white;
+    font-size:24px;
+    padding:5px 11px;
+    position:absolute;
+    right:0;
+}
+
+#filesPDF button:hover{
+    color:red;
+    font-weight: bold;
+}
+
+.disabledAnchor:hover{
+    background-color: #734b6d !important;
 }
