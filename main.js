@@ -25,7 +25,65 @@ $(document).ready(function () {
   if (document.title == "RHU SIS") {
     hasBeenWrong = false; //variable to determine whether or not to remove past mistakes that are red
     let btnLogin = document.getElementById("btnLogin");
+    let password = document.getElementById("txtLoginPassword");
 
+    //when enter is pressed
+    password.addEventListener("keypress", function(event) {
+      let username = document.getElementById("txtLoginUsername").value;
+      let password = document.getElementById("txtLoginPassword").value;
+
+      fetch("users.json")
+        .then((response) => response.json())
+        .then((data) => {
+          let hasFound = false;
+
+          data.forEach((item) => {
+
+            if (hasFound) {
+              //dont do anything!!!!
+            }
+            else {
+              if (item.ID == username && item.Password == password) {
+                window.open("homepage.html?ID=" + username, "_self");
+                Cookies.set('username', username, { expires: 7 })
+                hasFound = true;
+              }
+              else if ((username == "" || password == "") && !hasFound) {
+                let divLoginDesignHeader = document.getElementById("loginDesignHeader");
+                if (hasBeenWrong == true) {
+                  divLoginDesignHeader.removeChild(divLoginDesignHeader.lastChild);
+                }
+                let txt = document.createElement("p");
+                txt.innerHTML = "Please make sure both fields are filled!";
+                divLoginDesignHeader.appendChild(txt);
+                hasBeenWrong = true;
+              }
+              else if ((username == "" && password != "")) {
+                let divLoginDesignHeader = document.getElementById("loginDesignHeader");
+                if (hasBeenWrong == true) {
+                  divLoginDesignHeader.removeChild(divLoginDesignHeader.lastChild);
+                }
+                //this is not working ~Abed 
+                let txt = document.createElement("p");
+                txt.innerHTML = "Invalid username or password! Please try again";
+                divLoginDesignHeader.appendChild(txt);
+                hasBeenWrong = true;
+              }
+            }
+          });
+        });
+    }
+    
+    );
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        login();
+      }
+    ;
+    
+    btnLogin.addEventListener("click", function () {
+      login();
+    });
 
 
     btnLogin.addEventListener("click", function () {
@@ -63,6 +121,7 @@ $(document).ready(function () {
                 if (hasBeenWrong == true) {
                   divLoginDesignHeader.removeChild(divLoginDesignHeader.lastChild);
                 }
+                //this is not working ~Abed 
                 let txt = document.createElement("p");
                 txt.innerHTML = "Invalid username or password! Please try again";
                 divLoginDesignHeader.appendChild(txt);
@@ -71,7 +130,9 @@ $(document).ready(function () {
             }
           });
         });
-    });
+    }
+    
+    );
   } else if (document.title == "Study Plan") {
     let arrTaken = [];
     let i = 0, turn = 0;
