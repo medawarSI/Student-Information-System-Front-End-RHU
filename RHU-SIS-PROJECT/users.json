@@ -1,0 +1,338 @@
+[
+    {
+        "Name": "Steve Steveson",
+        "ID": 20202020,
+        "Password": "notapassword",
+        "Major": "Computer Science",
+        "Picture": "https://www.svg.com/img/gallery/minecraft-brought-back-steves-beard-and-fans-cant-get-enough/intro-1661196026.jpg",
+        "CGPA": 93.5,
+        "NeededCredits": 93,
+        "CompletedCredits": 51,
+        "Standing": "Junior",
+        "Transcript": "www.google.com",
+        "StatementOfFees": "www.google.com",
+        "Grades": [
+            {
+                "Name": "Fall 2021-2022",
+                "Courses": [
+                    {
+                        "CourseName": "COSC214",
+                        "Course Description": "Introduction to Programming",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 98.00,
+                        "LetterGrade": "A+"
+                    },
+                    {
+                        "CourseName": "ENGL210",
+                        "Course Description": "English Composition and Rhetoric",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 84.00,
+                        "LetterGrade": "B"
+                    },
+                    {
+                        "CourseName": "MATH111",
+                        "Course Description": "Calculus III",
+                        "Credit": "4",
+                        "Pass": "Yes",
+                        "Grade": 100,
+                        "LetterGrade": "A+"
+                    },
+                    {
+                        "CourseName": "COSC251",
+                        "Course Description": "Logic Design",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 98.00,
+                        "LetterGrade": "A+"
+                    }
+                ],
+                "TermGpa": 95.38,
+                "CumGpa": 95.38
+            },
+            {
+                "Name": "Spring 2021-2022",
+                "Courses": [
+                    {
+                        "CourseName": "COSC231",
+                        "Course Description": "Database Management Systems",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 97.00,
+                        "LetterGrade": "A+"
+                    },
+                    {
+                        "CourseName": "COSC215",
+                        "Course Description": "Advanced Programming and Data Structures",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 93.00,
+                        "LetterGrade": "A"
+                    },
+                    {
+                        "CourseName": "COSC351L",
+                        "Course Description": "Logic Design Lab",
+                        "Credit": "1",
+                        "Pass": "Yes",
+                        "Grade": 95,
+                        "LetterGrade": "A+"
+                    },
+                    {
+                        "CourseName": "BMKT200",
+                        "Course Description": "Introduction to Marketing",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 98.00,
+                        "LetterGrade": "A+"
+                    },
+                    {
+                        "CourseName": "CVLN202",
+                        "Course Description": "Introduction to Marketing",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 92.00,
+                        "LetterGrade": "A"
+                    },
+                    {
+                        "CourseName": "MATH210",
+                        "Course Description": "Discrete Mathematics",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 87.00,
+                        "LetterGrade": "B+"
+                    }
+                ],
+                "TermGpa": 93.50,
+                "CumGpa": 94.34
+            },
+            {
+                "Name": "Summer 2021-2022",
+                "Courses": [
+                    {
+                        "CourseName": "MATH315",
+                        "Course Description": "Probability and Statistics",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 95.00,
+                        "LetterGrade": "A+"
+                    },
+                    {
+                        "CourseName": "CHEM211",
+                        "Course Description": "Environmental Chemistry",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 87.00,
+                        "LetterGrade": "B+"
+                    }
+                ],
+                "TermGpa": 91.00,
+                "CumGpa": 93.77
+            },
+            {
+                "Name": "Fall 2022-2023",
+                "Courses": [
+                    {
+                        "CourseName": "COSC316",
+                        "Course Description": "Design and Analysis of Algorithms",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 100.00,
+                        "LetterGrade": "A+"
+                    },
+                    {
+                        "CourseName": "ENGL217",
+                        "Course Description": "Professional English Communication",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 91.00,
+                        "LetterGrade": "A"
+                    },{
+                        "CourseName": "COSC360L",
+                        "Course Description": "Networking Lab I",
+                        "Credit": "1",
+                        "Pass": "Yes",
+                        "Grade": 100.00,
+                        "LetterGrade": "A+"
+                    },{
+                        "CourseName": "COSC360",
+                        "Course Description": "Networking",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 91.00,
+                        "LetterGrade": "A"
+                    },{
+                        "CourseName": "CMNS410",
+                        "Course Description": "Public Speaking",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 86.00,
+                        "LetterGrade": "B+"
+                    },{
+                        "CourseName": "COSC431",
+                        "Course Description": "Mobile Application Development",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 100.00,
+                        "LetterGrade": "A+"
+                    }
+                ],
+                "TermGpa": 94.00,
+                "CumGpa": 93.80
+            },
+            {
+                "Name": "Spring 2022-2023",
+                "Courses": [
+                    {
+                        "CourseName": "COSC333",
+                        "Course Description": "Web Programming",
+                        "Credit": "3",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    },
+                    {
+                        "CourseName": "ARAB212",
+                        "Course Description": "Arabic Language and Communication",
+                        "Credit": "2",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    },{
+                        "CourseName": "MATH313",
+                        "Course Description": "Linear Algebra",
+                        "Credit": "3",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    },{
+                        "CourseName": "CCEE550",
+                        "Course Description": "Software Engineering",
+                        "Credit": "3",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    },{
+                        "CourseName": "SOCI310",
+                        "Course Description": "Intercultural Communication",
+                        "Credit": "3",
+                        "Pass": "N/a",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    }
+                ],
+                "TermGpa":  0.00,
+                "CumGpa": 0.00
+            }
+        ]
+    },
+    {
+        "Name": "Alex Alexason",
+        "ID": 20225555,
+        "Password": "notapassword",
+        "Major": "Graphic Design",
+        "Picture": "https://www.svg.com/img/gallery/how-to-breed-horses-and-mules-in-minecraft/l-intro-1664901586.jpg",
+        "CGPA": 87.45,
+        "NeededCredits": 111,
+        "CompletedCredits": 15,
+        "Standing": "Sophmore",
+        "Transcript": "www.google.com",
+        "StatementOfFees": "www.google.com",
+        "Grades": [
+            {
+                "Name": "Fall 2021-2022",
+                "Courses": [
+                    {
+                        "CourseName": "GRDS220",
+                        "Course Description": "Introduction to Digital Media",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 83.00,
+                        "LetterGrade": "B"
+                    },
+                    {
+                        "CourseName": "ENGL210",
+                        "Course Description": "English Composition and Rhetoric",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 95.00,
+                        "LetterGrade": "A+"
+                    },
+                    {
+                        "CourseName": "FADR200",
+                        "Course Description": "Drawing I",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 89.00,
+                        "LetterGrade": "B+"
+                    },
+                    {
+                        "CourseName": "FADR215",
+                        "Course Description": "History of Art",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 77.00,
+                        "LetterGrade": "C+"
+                    },
+                    {
+                        "CourseName": "FADR220",
+                        "Course Description": "Fundamentals of 2D",
+                        "Credit": "3",
+                        "Pass": "Yes",
+                        "Grade": 93.00,
+                        "LetterGrade": "A"
+                    }
+                ],
+                "TermGpa": 87.45,
+                "CumGpa": 87.45
+            },
+            {
+                "Name": "Spring 2021-2022",
+                "Courses": [
+                    {
+                        "CourseName": "GRDS205",
+                        "Course Description": "Type I",
+                        "Credit": "3",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    },
+                    {
+                        "CourseName": "GRDS222",
+                        "Course Description": "Advanced Digital Media",
+                        "Credit": "3",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    },
+                    {
+                        "CourseName": "FADR202",
+                        "Course Description": "Drawing II",
+                        "Credit": "3",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    },
+                    {
+                        "CourseName": "FADR210",
+                        "Course Description": "Rendering and Perspective Techniques",
+                        "Credit": "3",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    },
+                    {
+                        "CourseName": "FADR222",
+                        "Course Description": "Fundamentals of 3D",
+                        "Credit": "3",
+                        "Pass": "N/A",
+                        "Grade": 0.00,
+                        "LetterGrade": "N/A"
+                    }
+                ],
+                "TermGpa": 0.00,
+                "CumGpa": 0.00
+            }
+        ]
+    }
+]
