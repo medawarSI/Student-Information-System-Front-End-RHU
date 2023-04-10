@@ -1,278 +1,648 @@
 [
   {
-    "Coursecode": " COSC 214",
-    "Title": " Introduction to Programming",
-    "Credits": 3,
-    "Prerequisites": "-"
+    "ID": 20202020,
+    "StudyPlan": [
+      {
+        "Coursecode": " Year 1, Semester 1 (16 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " COSC 214",
+        "Title": " Introduction to Programming",
+        "Credits": 3,
+        "Prerequisites": "-",
+        "taken": 1,
+        "description": " This course presents the fundamentals of structured and modular programming concepts. It covers primitive data types, expressions, control statements, functions, arrays, basic searching/sorting algorithms, and introduction to pointers."
+      },
+      {
+        "Coursecode": "COSC 351 ",
+        "Title": " Logic Design",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": "This course addresses Boolean algebra and logic simplification techniques, data representation, and the design of combinational logic networks for decoders, encoders, multiplexers, and demultiplexers. Design of sequential logic devices including flip-flops, registers, and counters, as well as analysis of devices used to build logic networks, including programmable logic devices. "
+      },
+      {
+        "Coursecode": "ENGL 210",
+        "Title": "English Composition and Rhetoric",
+        "Credits": 2,
+        "Prerequisites": "Placement",
+        "taken": 1,
+        "description": "This course reviews the fundamentals of good academic writing in English, teaches essay writing essentials and research skills in two rhetorical modes (persuasion and argumentation), and provides practice in writing essays in these modes, research paper, and oral presentation. "
+      },
+      {
+        "Coursecode": " MATH 211 ",
+        "Title": "Calculus III ",
+        "Credits": 4,
+        "Prerequisites": "- ",
+        "taken": 1,
+        "description": " Hyperbolic functions and their inverses, infinite sequences and series, polar coordinates, cylinders and quadric surfaces, functions of several variables, partial derivatives, Multiple integrals in rectangular, cylindrical, and spherical coordinates, substitutions."
+      },
+      {
+        "Coursecode": " ",
+        "Title": "Natural Sciences and Technology Elective ",
+        "Credits": 3,
+        "Prerequisites": "- ",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " Year 1, Semester 2 (16 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": "COSC 215 ",
+        "Title": " Advanced Programming and Data Structures",
+        "Credits": 3,
+        "Prerequisites": "COSC 214 ",
+        "taken": 1,
+        "description": "A continuation of COSC 214, this course covers the basics of Object Oriented Programming (OOP) languages and data structures. It covers pointers, classes, constructors/destructors, object instantiation, inheritance, polymorphism, and templates. The course also covers fundamental data structures and applications such as stacks, queues, and lists."
+      },
+      {
+        "Coursecode": "COSC 231 ",
+        "Title": "Database Management Systems ",
+        "Credits": 3,
+        "Prerequisites": " COSC 214",
+        "taken": 1,
+        "description": "This course exposes students to the fundamental concepts necessary for designing, using and implementing database systems. It covers database concepts, data modeling, relations, normalizations, and data manipulation languages "
+      },
+      {
+        "Coursecode": " COSC 351L",
+        "Title": "Logic Design Lab 1",
+        "Credits": 1,
+        "Prerequisites": " COSC 351",
+        "taken": 1,
+        "description": "This Lab covers design techniques and implementation of combinational and sequential logic circuits. Experiments include: logic gates, design and implementation of logic circuits, combinational logic circuits (decoders, encoders, multiplexers, demultiplexers and adders), and design of sequential logic devices using flip-flops, registers, and counters. "
+      },
+      {
+        "Coursecode": " MATH 210",
+        "Title": "Discrete Mathematics",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": "Logic, propositional equivalences, predicates and quantifiers, methods of proof, proof strategy, mathematical induction, recursive definitions and structural induction, sets and set operations, functions, growth of functions, basics of counting, permutations and combinations, Binomial theorem, relations and their properties, representing relations, equivalence relations, introduction to graphs, graph terminology, introduction to trees.  "
+      },
+      {
+        "Coursecode": " ENGL 217",
+        "Title": "Professional English Communication",
+        "Credits": 3,
+        "Prerequisites": " ENGL 210",
+        "taken": 1,
+        "description": " This is a required course designed to help students develop effective professional communication skills, both orally and in writing. In this course, students learn how to write emails, memos, letters, proposals, reports, and other forms of employment correspondence. In addition, this course helps students sharpen their presentation skills. Broadly, this course enables students to behave professionally and effectively in their prospective jobs"
+      },
+      {
+        "Coursecode": " ARAB 212",
+        "Title": "Arabic Language and Communication",
+        "Credits": 2,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " This course helps students develop their ability to communicate effectively in standard Arabic. It provides students with the necessary communication skills in Arabic they might need in their future jobs. Specifically, students learn how to write and orally present different forms of workplace documents in Arabic. "
+      },
+      {
+        "Coursecode": " CMNS 200",
+        "Title": "Etiquette",
+        "Credits": 1,
+        "Prerequisites": " Co-req.: ENGL 210",
+        "taken": 0,
+        "description": "This course is designed to help students develop interpersonal and communication skills fundamental for success in the workplace no matter what industry, organization, or sector they are employed. Students will improve their professional style as they study topics including polite conversation, personal appearance, office politics, diplomacy, telephone, cell phone, and voicemail etiquette, the protocol of meetings, job interview presentation and even international travel. Students will participate in an off-campus formal dining experience. "
+      },
+      {
+        "Coursecode": " Summer Session (3 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " ",
+        "Title": "Humanities/Fine Arts Elective",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " Year 2, Semester 1 (16 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": "COSC 316",
+        "Title": "Design and Analysis of Algorithms",
+        "Credits": 3,
+        "Prerequisites": " COSC 215",
+        "taken": 1,
+        "description": "This course consolidates algorithm design and programming techniques. It provides a detailed study of data structures and data abstraction, an introduction to complexity considerations, and software design pattern "
+      },
+      {
+        "Coursecode": " COSC 333",
+        "Title": "Web Programming",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": "This course teaches students how to develop and implement web based programs with emphasis on front-end programming. It introduces students to web development and to different client side languages and styles needed to develop adequate and responsive websites. The course covers HTML5, CSS3, JavaScript/jQuery and responsive design. "
+      },
+      {
+        "Coursecode": " COSC 360",
+        "Title": "Networking",
+        "Credits": 3,
+        "Prerequisites": "COSC 214",
+        "taken": 1,
+        "description": " This course enables students to gain fundamental knowledge of computer networks, appreciate various tradeoffs and choices in networking, learn to design and analyze protocols, and get ready for studying advanced topics in the field of networks."
+      },
+      {
+        "Coursecode": "COSC 360L",
+        "Title": "Networking Lab 1",
+        "Credits": 1,
+        "Prerequisites": " Co-req,: COSC 360",
+        "taken": 1,
+        "description": "This Lab helps prepare students seeking to pass advanced Cisco Certifications. The student will acquire the knowledge of the functionalities of network equipment and protocols, learn how to build a simple Ethernet network using routers, switches and computers, and use router CLI commands to perform basic configuration and verification. The student will also learn valuable network problem solving techniques and concepts. Accompanying Lab for COSC 360 "
+      },
+      {
+        "Coursecode": "MATH 351",
+        "Title": "Probability and Statistics",
+        "Credits": 3,
+        "Prerequisites": "MATH 211",
+        "taken": 1,
+        "description": "Probability and conditional probability, Discrete and continuous random variables, marginal distributions, expectation, variance-mean-median-covariance and correlation, conditional expectation, binomial, multinomial and Poisson distributions, Normal distribution, Sampling distribution, Prediction and confidence intervals, Hypothesis testing. "
+      },
+      {
+        "Coursecode": " ",
+        "Title": "Social Science/Culture Elective I",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " Year 2, Semester 2 (15 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " MATH 311",
+        "Title": "Linear Algebra",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": "Systems of linear equations, matrix algebra, linear transformations, determinants, vector spaces, eigenvalues and eigenvectors, symmetric matrices, orthogonality, diagonalization. "
+      },
+      {
+        "Coursecode": " COSC 341",
+        "Title": "Software Engineering",
+        "Credits": 3,
+        "Prerequisites": "COSC 214",
+        "taken": 1,
+        "description": "This course teaches students how to develop and implement web based programs with emphasis on front-end programming. It introduces students to web development and to different client side languages and styles needed to develop adequate and responsive websites. The course covers HTML5, CSS3, JavaScript/jQuery and responsive design. "
+      },
+      {
+        "Coursecode": "BMKA 200 ",
+        "Title": "Introduction to Marketing",
+        "Credits": 3,
+        "Prerequisites": " ENGL 210",
+        "taken": 1,
+        "description": " This course introduces the basic principles, theories, and practices of marketing in our modern ever-changing business environment. The course covers the marketing process activities on how to create value for customers to capture value from customers in return. It also discusses the marketing mix and how to build long-term Page 169 customer relationship with customers. Students will analyze case studies about a “real-life” product or service. Videos and in-class discussions on current marketing topics will assist in the learning experience"
+      },
+      {
+        "Coursecode": " ",
+        "Title": "CS Major Elective I",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " ",
+        "Title": "CS Major Elective II",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "description": " "
+      },
+      {
+        "Coursecode": " Summer Session (1 Credit)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": "COSC 399",
+        "Title": "Co-op Training Experience",
+        "Credits": 1,
+        "Prerequisites": " ENGL 217; Senior Standing",
+        "description": "Each student must complete 8 weeks of practical training in an area related to his/her field of interest. This Co-op work experience is usually fulfilled during the summer semester of the third year into the program. Students are required to submit a formal report, and/or poster, and make a formal presentation about their Co-op experience. "
+      },
+      {
+        "Coursecode": " Year 3, Semester 1 (15 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " COSC 333",
+        "Title": "Computer Organization",
+        "Credits": 3,
+        "Prerequisites": " COSC 351",
+        "description": " This course exposes students to computer system organization and design, implementation of CPU data path and control, instruction set design, memory hierarchy (caches, main memory, virtual memory) organization and management, input/output subsystems (bus structures, interrupts, DMA), performance evaluation, and pipelined processors"
+      },
+      {
+        "Coursecode": "COSC 451 ",
+        "Title": "Operating Systems",
+        "Credits": 3,
+        "Prerequisites": "COSC 214",
+        "description": "Students learn the concepts of operating systems theory and their implementations. The course covers computer and operating system structures, process and thread management, process management and synchronization, deadlocks, security and protection, inter-process communication, memory management, and I/O control system. A case study of a UNIX operating system will accompany the course. "
+      },
+      {
+        "Coursecode": "GRDS 440 ",
+        "Title": "Design and Social Impact",
+        "Credits": 3,
+        "Prerequisites": " Junior Standing",
+        "description": "This course prepares students to become leading agents of social change through community engagement. It aims at promoting collaborative work between computer science and graphic design students to design effective solutions to existent community issues. The course is structured on a balance between classroom theory learning, extensive field research and implementation of a real-world solution using both expertise. "
+      },
+      {
+        "Coursecode": "COSC 421",
+        "Title": "Theory of Computation",
+        "Credits": 3,
+        "Prerequisites": "MATH 210 ",
+        "description": "This course covers theoretical principles embodied in automata and grammars. Topics include Deterministic and Non-deterministic Finite Automata (DFA and NFA), pushdown automata, closure properties, context free languages, context free grammar, Turing machines, reductions and decidability, and other selected topics as time permits.  "
+      },
+      {
+        "Coursecode": " ",
+        "Title": "Social Sciences/Culture Elective II",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " Year 3, Semester 2 (12 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " BMGT 300",
+        "Title": "Project Management",
+        "Credits": 3,
+        "Prerequisites": "Junior Standing ",
+        "description": "This course provides the students the necessary skills to manage their business projects using effective techniques in leading, organizing, scheduling, and controlling the tasks contributing to the project goals. Topics include selection and statement of work of projects; skills of project managers and task break down structure, PERT/CPM scheduling and budgeting,  "
+      },
+      {
+        "Coursecode": "COSC 490",
+        "Title": "Summative Learning Experience",
+        "Credits": 3,
+        "Prerequisites": "ENGL 217 ",
+        "description": "This is a whole year graduation project directed on individual problems and research. Each student will have to complete it in her/his emphasis area. "
+      },
+      {
+        "Coursecode": "MATH 421",
+        "Title": "Numerical Analysis",
+        "Credits": 3,
+        "Prerequisites": "MATH 311 ",
+        "description": " Error Analysis, solutions of nonlinear equations using fixed point- Newton-RaphsonMuller’s methods, solution of linear system using Gaussian elimination-iterative methods, interpolation and approximation using Taylor series-Lagrange approximation-Newton polynomials, numerical differentiation and integration, numerical optimization, solutions of ordinary and partial differential equations using Euler’s and Heun’s and Rung-Kutta methods."
+      },
+      {
+        "Coursecode": "",
+        "Title": "CS Major Elective III",
+        "Credits": 3,
+        "Prerequisites": "-",
+        "description": " "
+      }
+    ]
   },
   {
-    "Coursecode": " Year 1, Semester 1 (16 Credits)",
-    "Title": " ",
-    "Credits": " ",
-    "Prerequisites": ""
-  },
-  {
-    "Coursecode": "COSC 351 ",
-    "Title": " Logic Design",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-
-  {
-    "Coursecode": "ENGL 210",
-    "Title": "English Composition and Rhetoric",
-    "Credits": 2,
-    "Prerequisites": "Placement"
-  },
-  {
-    "Coursecode": " MATH 211 ",
-    "Title": "Calculus III ",
-    "Credits": 4,
-    "Prerequisites": "- "
-  },
-
-  {
-    "Coursecode": " ",
-    "Title": "Natural Sciences and Technology Elective ",
-    "Credits": 3,
-    "Prerequisites": "- "
-  },
-  {
-    "Coursecode": " Year 1, Semester 2 (16 Credits)",
-    "Title": " ",
-    "Credits": " ",
-    "Prerequisites": ""
-  },
-  {
-    "Coursecode": "COSC 215 ",
-    "Title": " Advanced Programming and Data Structures",
-    "Credits": 3,
-    "Prerequisites": "COSC 214 "
-  },
-
-  {
-    "Coursecode": "COSC 231 ",
-    "Title": "Database Management Systems ",
-    "Credits": 3,
-    "Prerequisites": " COSC 214"
-  },
-
-  {
-    "Coursecode": " COSC 351L",
-    "Title": "Logic Design Lab 1",
-    "Credits": 1,
-    "Prerequisites": " COSC 351"
-  },
-
-  {
-    "Coursecode": " MATH 210",
-    "Title": "Discrete Mathematics",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-
-  {
-    "Coursecode": " ENGL 217",
-    "Title": "Professional English Communication",
-    "Credits": 3,
-    "Prerequisites": " ENGL 210"
-  },
-
-  {
-    "Coursecode": " ARAB 212",
-    "Title": "Arabic Language and Communication",
-    "Credits": 2,
-    "Prerequisites": " -"
-  },
-
-  {
-    "Coursecode": " CMNS 200",
-    "Title": "Etiquette",
-    "Credits": 1,
-    "Prerequisites": " Co-req.: ENGL 210"
-  },
-  {
-    "Coursecode": " Summer Session (3 Credits)",
-    "Title": " ",
-    "Credits": " ",
-    "Prerequisites": ""
-  },
-  {
-    "Coursecode": " ",
-    "Title": "Humanities/Fine Arts Elective",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-  {
-    "Coursecode": " Year 2, Semester 1 (16 Credits)",
-    "Title": " ",
-    "Credits": " ",
-    "Prerequisites": ""
-  },
-  {
-    "Coursecode": "COSC 316",
-    "Title": "Design and Analysis of Algorithms",
-    "Credits": 3,
-    "Prerequisites": " COSC 215"
-  },
-
-  {
-    "Coursecode": " COSC 333",
-    "Title": "Web Programming",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-
-  {
-    "Coursecode": " COSC 360",
-    "Title": "Networking",
-    "Credits": 3,
-    "Prerequisites": "COSC 214"
-  },
-
-  {
-    "Coursecode": "COSC 360L",
-    "Title": "Networking Lab 1",
-    "Credits": 1,
-    "Prerequisites": " Co-req,: COSC 360"
-  },
-
-  {
-    "Coursecode": "MATH 351",
-    "Title": "Probability and Statistics",
-    "Credits": 3,
-    "Prerequisites": "MATH 211"
-  },
-
-  {
-    "Coursecode": " ",
-    "Title": "Social Science/Culture Elective I",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-  {
-    "Coursecode": " Year 2, Semester 2 (15 Credits)",
-    "Title": " ",
-    "Credits": " ",
-    "Prerequisites": ""
-  },
-  {
-    "Coursecode": " MATH 311",
-    "Title": "Linear Algebra",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-
-  {
-    "Coursecode": " COSC 341",
-    "Title": "Software Engineering",
-    "Credits": 3,
-    "Prerequisites": "COSC 214"
-  },
-
-  {
-    "Coursecode": "BMKA 200 ",
-    "Title": "Introduction to Marketing",
-    "Credits": 3,
-    "Prerequisites": " ENGL 210"
-  },
-
-  {
-    "Coursecode": " ",
-    "Title": "CS Major Elective I",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-
-  {
-    "Coursecode": " ",
-    "Title": "CS Major Elective II",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-  {
-    "Coursecode": " Summer Session (1 Credit)",
-    "Title": " ",
-    "Credits": " ",
-    "Prerequisites": ""
-  },
-  {
-    "Coursecode": "COSC 399",
-    "Title": "Co-op Training Experience",
-    "Credits": 1,
-    "Prerequisites": " ENGL 217; Senior Standing"
-  },
-  {
-    "Coursecode": " Year 3, Semester 1 (15 Credits)",
-    "Title": " ",
-    "Credits": " ",
-    "Prerequisites": ""
-  },
-
-  {
-    "Coursecode": " COSC 333",
-    "Title": "Computer Organization",
-    "Credits": 3,
-    "Prerequisites": " COSC 351"
-  },
-
-  {
-    "Coursecode": "COSC 451 ",
-    "Title": "Operating Systems",
-    "Credits": 3,
-    "Prerequisites": "COSC 214"
-  },
-
-  {
-    "Coursecode": "GRDS 440 ",
-    "Title": "Design and Social Impact",
-    "Credits": 3,
-    "Prerequisites": " Junior Standing"
-  },
-
-  {
-    "Coursecode": "COSC 421",
-    "Title": "Theory of Computation",
-    "Credits": 3,
-    "Prerequisites": "MATH 210 "
-  },
-
-  {
-    "Coursecode": " ",
-    "Title": "Social Sciences/Culture Elective II",
-    "Credits": 3,
-    "Prerequisites": " -"
-  },
-  {
-    "Coursecode": " Year 3, Semester 2 (12 Credits)",
-    "Title": " ",
-    "Credits": " ",
-    "Prerequisites": ""
-  },
-  {
-    "Coursecode": " BMGT 300",
-    "Title": "Project Management",
-    "Credits": 3,
-    "Prerequisites": "Junior Standing "
-  },
-  {
-    "Coursecode": "COSC 490",
-    "Title": "Summative Learning Experience",
-    "Credits": 3,
-    "Prerequisites": "ENGL 217 "
-  },
-
-  {
-    "Coursecode": "MATH 421",
-    "Title": "Numerical Analysis",
-    "Credits": 3,
-    "Prerequisites": "MATH 311 "
-  },
-
-  {
-    "Coursecode": "",
-    "Title": "CS Major Elective III",
-    "Credits": 3,
-    "Prerequisites": "-"
+    "ID": 20225555,
+    "StudyPlan": [
+      {
+        "Coursecode": " Year 1, Semester 1 (16 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " COSC 214",
+        "Title": " Introduction to whatever",
+        "Credits": 3,
+        "Prerequisites": "-",
+        "taken": 1,
+        "description": " This course presents the fundamentals of structured and modular programming concepts. It covers primitive data types, expressions, control statements, functions, arrays, basic searching/sorting algorithms, and introduction to pointers."
+      },
+      {
+        "Coursecode": "COSC 351 ",
+        "Title": " THIS SHOULD BE GRAPHIC DESIGN, JUST WAITING FOR ABED",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": "This course addresses Boolean algebra and logic simplification techniques, data representation, and the design of combinational logic networks for decoders, encoders, multiplexers, and demultiplexers. Design of sequential logic devices including flip-flops, registers, and counters, as well as analysis of devices used to build logic networks, including programmable logic devices. "
+      },
+      {
+        "Coursecode": "ENGL 210",
+        "Title": "English Composition and Rhetoric",
+        "Credits": 2,
+        "Prerequisites": "Placement",
+        "taken": 1,
+        "description": "This course reviews the fundamentals of good academic writing in English, teaches essay writing essentials and research skills in two rhetorical modes (persuasion and argumentation), and provides practice in writing essays in these modes, research paper, and oral presentation. "
+      },
+      {
+        "Coursecode": " MATH 211 ",
+        "Title": "Calculus III ",
+        "Credits": 4,
+        "Prerequisites": "- ",
+        "taken": 1,
+        "description": " Hyperbolic functions and their inverses, infinite sequences and series, polar coordinates, cylinders and quadric surfaces, functions of several variables, partial derivatives, Multiple integrals in rectangular, cylindrical, and spherical coordinates, substitutions."
+      },
+      {
+        "Coursecode": " ",
+        "Title": "Natural Sciences and Technology Elective ",
+        "Credits": 3,
+        "Prerequisites": "- ",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " Year 1, Semester 2 (16 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": "COSC 215 ",
+        "Title": " Advanced Programming and Data Structures",
+        "Credits": 3,
+        "Prerequisites": "COSC 214 ",
+        "taken": 1,
+        "description": "A continuation of COSC 214, this course covers the basics of Object Oriented Programming (OOP) languages and data structures. It covers pointers, classes, constructors/destructors, object instantiation, inheritance, polymorphism, and templates. The course also covers fundamental data structures and applications such as stacks, queues, and lists."
+      },
+      {
+        "Coursecode": "COSC 231 ",
+        "Title": "Database Management Systems ",
+        "Credits": 3,
+        "Prerequisites": " COSC 214",
+        "taken": 1,
+        "description": "This course exposes students to the fundamental concepts necessary for designing, using and implementing database systems. It covers database concepts, data modeling, relations, normalizations, and data manipulation languages "
+      },
+      {
+        "Coursecode": " COSC 351L",
+        "Title": "Logic Design Lab 1",
+        "Credits": 1,
+        "Prerequisites": " COSC 351",
+        "taken": 1,
+        "description": "This Lab covers design techniques and implementation of combinational and sequential logic circuits. Experiments include: logic gates, design and implementation of logic circuits, combinational logic circuits (decoders, encoders, multiplexers, demultiplexers and adders), and design of sequential logic devices using flip-flops, registers, and counters. "
+      },
+      {
+        "Coursecode": " MATH 210",
+        "Title": "Discrete Mathematics",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": "Logic, propositional equivalences, predicates and quantifiers, methods of proof, proof strategy, mathematical induction, recursive definitions and structural induction, sets and set operations, functions, growth of functions, basics of counting, permutations and combinations, Binomial theorem, relations and their properties, representing relations, equivalence relations, introduction to graphs, graph terminology, introduction to trees.  "
+      },
+      {
+        "Coursecode": " ENGL 217",
+        "Title": "Professional English Communication",
+        "Credits": 3,
+        "Prerequisites": " ENGL 210",
+        "taken": 1,
+        "description": " This is a required course designed to help students develop effective professional communication skills, both orally and in writing. In this course, students learn how to write emails, memos, letters, proposals, reports, and other forms of employment correspondence. In addition, this course helps students sharpen their presentation skills. Broadly, this course enables students to behave professionally and effectively in their prospective jobs"
+      },
+      {
+        "Coursecode": " ARAB 212",
+        "Title": "Arabic Language and Communication",
+        "Credits": 2,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " This course helps students develop their ability to communicate effectively in standard Arabic. It provides students with the necessary communication skills in Arabic they might need in their future jobs. Specifically, students learn how to write and orally present different forms of workplace documents in Arabic. "
+      },
+      {
+        "Coursecode": " CMNS 200",
+        "Title": "Etiquette",
+        "Credits": 1,
+        "Prerequisites": " Co-req.: ENGL 210",
+        "taken": 0,
+        "description": "This course is designed to help students develop interpersonal and communication skills fundamental for success in the workplace no matter what industry, organization, or sector they are employed. Students will improve their professional style as they study topics including polite conversation, personal appearance, office politics, diplomacy, telephone, cell phone, and voicemail etiquette, the protocol of meetings, job interview presentation and even international travel. Students will participate in an off-campus formal dining experience. "
+      },
+      {
+        "Coursecode": " Summer Session (3 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " ",
+        "Title": "Humanities/Fine Arts Elective",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " Year 2, Semester 1 (16 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": "COSC 316",
+        "Title": "Design and Analysis of Algorithms",
+        "Credits": 3,
+        "Prerequisites": " COSC 215",
+        "taken": 1,
+        "description": "This course consolidates algorithm design and programming techniques. It provides a detailed study of data structures and data abstraction, an introduction to complexity considerations, and software design pattern "
+      },
+      {
+        "Coursecode": " COSC 333",
+        "Title": "Web Programming",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": "This course teaches students how to develop and implement web based programs with emphasis on front-end programming. It introduces students to web development and to different client side languages and styles needed to develop adequate and responsive websites. The course covers HTML5, CSS3, JavaScript/jQuery and responsive design. "
+      },
+      {
+        "Coursecode": " COSC 360",
+        "Title": "Networking",
+        "Credits": 3,
+        "Prerequisites": "COSC 214",
+        "taken": 1,
+        "description": " This course enables students to gain fundamental knowledge of computer networks, appreciate various tradeoffs and choices in networking, learn to design and analyze protocols, and get ready for studying advanced topics in the field of networks."
+      },
+      {
+        "Coursecode": "COSC 360L",
+        "Title": "Networking Lab 1",
+        "Credits": 1,
+        "Prerequisites": " Co-req,: COSC 360",
+        "taken": 1,
+        "description": "This Lab helps prepare students seeking to pass advanced Cisco Certifications. The student will acquire the knowledge of the functionalities of network equipment and protocols, learn how to build a simple Ethernet network using routers, switches and computers, and use router CLI commands to perform basic configuration and verification. The student will also learn valuable network problem solving techniques and concepts. Accompanying Lab for COSC 360 "
+      },
+      {
+        "Coursecode": "MATH 351",
+        "Title": "Probability and Statistics",
+        "Credits": 3,
+        "Prerequisites": "MATH 211",
+        "taken": 1,
+        "description": "Probability and conditional probability, Discrete and continuous random variables, marginal distributions, expectation, variance-mean-median-covariance and correlation, conditional expectation, binomial, multinomial and Poisson distributions, Normal distribution, Sampling distribution, Prediction and confidence intervals, Hypothesis testing. "
+      },
+      {
+        "Coursecode": " ",
+        "Title": "Social Science/Culture Elective I",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " Year 2, Semester 2 (15 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " MATH 311",
+        "Title": "Linear Algebra",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": "Systems of linear equations, matrix algebra, linear transformations, determinants, vector spaces, eigenvalues and eigenvectors, symmetric matrices, orthogonality, diagonalization. "
+      },
+      {
+        "Coursecode": " COSC 341",
+        "Title": "Software Engineering",
+        "Credits": 3,
+        "Prerequisites": "COSC 214",
+        "taken": 1,
+        "description": "This course teaches students how to develop and implement web based programs with emphasis on front-end programming. It introduces students to web development and to different client side languages and styles needed to develop adequate and responsive websites. The course covers HTML5, CSS3, JavaScript/jQuery and responsive design. "
+      },
+      {
+        "Coursecode": "BMKA 200 ",
+        "Title": "Introduction to Marketing",
+        "Credits": 3,
+        "Prerequisites": " ENGL 210",
+        "taken": 1,
+        "description": " This course introduces the basic principles, theories, and practices of marketing in our modern ever-changing business environment. The course covers the marketing process activities on how to create value for customers to capture value from customers in return. It also discusses the marketing mix and how to build long-term Page 169 customer relationship with customers. Students will analyze case studies about a “real-life” product or service. Videos and in-class discussions on current marketing topics will assist in the learning experience"
+      },
+      {
+        "Coursecode": " ",
+        "Title": "CS Major Elective I",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " ",
+        "Title": "CS Major Elective II",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "description": " "
+      },
+      {
+        "Coursecode": " Summer Session (1 Credit)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": "COSC 399",
+        "Title": "Co-op Training Experience",
+        "Credits": 1,
+        "Prerequisites": " ENGL 217; Senior Standing",
+        "description": "Each student must complete 8 weeks of practical training in an area related to his/her field of interest. This Co-op work experience is usually fulfilled during the summer semester of the third year into the program. Students are required to submit a formal report, and/or poster, and make a formal presentation about their Co-op experience. "
+      },
+      {
+        "Coursecode": " Year 3, Semester 1 (15 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " COSC 333",
+        "Title": "Computer Organization",
+        "Credits": 3,
+        "Prerequisites": " COSC 351",
+        "description": " This course exposes students to computer system organization and design, implementation of CPU data path and control, instruction set design, memory hierarchy (caches, main memory, virtual memory) organization and management, input/output subsystems (bus structures, interrupts, DMA), performance evaluation, and pipelined processors"
+      },
+      {
+        "Coursecode": "COSC 451 ",
+        "Title": "Operating Systems",
+        "Credits": 3,
+        "Prerequisites": "COSC 214",
+        "description": "Students learn the concepts of operating systems theory and their implementations. The course covers computer and operating system structures, process and thread management, process management and synchronization, deadlocks, security and protection, inter-process communication, memory management, and I/O control system. A case study of a UNIX operating system will accompany the course. "
+      },
+      {
+        "Coursecode": "GRDS 440 ",
+        "Title": "Design and Social Impact",
+        "Credits": 3,
+        "Prerequisites": " Junior Standing",
+        "description": "This course prepares students to become leading agents of social change through community engagement. It aims at promoting collaborative work between computer science and graphic design students to design effective solutions to existent community issues. The course is structured on a balance between classroom theory learning, extensive field research and implementation of a real-world solution using both expertise. "
+      },
+      {
+        "Coursecode": "COSC 421",
+        "Title": "Theory of Computation",
+        "Credits": 3,
+        "Prerequisites": "MATH 210 ",
+        "description": "This course covers theoretical principles embodied in automata and grammars. Topics include Deterministic and Non-deterministic Finite Automata (DFA and NFA), pushdown automata, closure properties, context free languages, context free grammar, Turing machines, reductions and decidability, and other selected topics as time permits.  "
+      },
+      {
+        "Coursecode": " ",
+        "Title": "Social Sciences/Culture Elective II",
+        "Credits": 3,
+        "Prerequisites": " -",
+        "taken": 1,
+        "description": " "
+      },
+      {
+        "Coursecode": " Year 3, Semester 2 (12 Credits)",
+        "Title": " ",
+        "Credits": " ",
+        "Prerequisites": "",
+        "description": ""
+      },
+      {
+        "Coursecode": " BMGT 300",
+        "Title": "Project Management",
+        "Credits": 3,
+        "Prerequisites": "Junior Standing ",
+        "description": "This course provides the students the necessary skills to manage their business projects using effective techniques in leading, organizing, scheduling, and controlling the tasks contributing to the project goals. Topics include selection and statement of work of projects; skills of project managers and task break down structure, PERT/CPM scheduling and budgeting,  "
+      },
+      {
+        "Coursecode": "COSC 490",
+        "Title": "Summative Learning Experience",
+        "Credits": 3,
+        "Prerequisites": "ENGL 217 ",
+        "description": "This is a whole year graduation project directed on individual problems and research. Each student will have to complete it in her/his emphasis area. "
+      },
+      {
+        "Coursecode": "MATH 421",
+        "Title": "Numerical Analysis",
+        "Credits": 3,
+        "Prerequisites": "MATH 311 ",
+        "description": " Error Analysis, solutions of nonlinear equations using fixed point- Newton-RaphsonMuller’s methods, solution of linear system using Gaussian elimination-iterative methods, interpolation and approximation using Taylor series-Lagrange approximation-Newton polynomials, numerical differentiation and integration, numerical optimization, solutions of ordinary and partial differential equations using Euler’s and Heun’s and Rung-Kutta methods."
+      },
+      {
+        "Coursecode": "",
+        "Title": "CS Major Elective III",
+        "Credits": 3,
+        "Prerequisites": "-",
+        "description": " "
+      }
+    ]
   }
 ]

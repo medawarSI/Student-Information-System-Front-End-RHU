@@ -1,4 +1,12 @@
+/*
+Theme Name: Haigazian Academics
+Description: Haigazian Academics Theme Develop By Prakash.
+Version: 1
+Author: Haigazian Academics
+Author URI: https://haigazian.wpengine.com/
 
+Tags: Responsive Layout, HTML5/CSS3/Responsive, Slider, widgets
+*/
 
 /*css imports*/
 @import url("bootstrap.min.css");
@@ -450,4 +458,33 @@ table tr:nth-child(even) {
 
 .grecaptcha-badge { 
     visibility: hidden;
+}
+
+.download{
+  background-color: #734b6d;
+  color:white !important;
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif !important;
+  border: none !important;
+}
+.about-row{
+  padding:0px !important;
+}
+.about-row h3{
+  padding:20px 20px 0px 20px !important;
+}
+
+#bodyFiles #navbarSupportedContent{
+  margin-left:10px;
+}
+
+@media(max-width:992px){
+  #bodyFiles > nav > a{
+  }
+  #bodyFiles > nav{
+    align-items: center !important;
+    display:flex !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+  }
 }

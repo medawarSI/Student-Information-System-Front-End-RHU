@@ -348,9 +348,6 @@
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
   }
-  .navbar-toggle:hover {
-    opacity: .9;
-  }
   .navbar-toggle.active .top {
     -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
     -ms-transform: translateY(10px) translateX(0) rotate(45deg);

@@ -10,7 +10,7 @@
         "CompletedCredits": 51,
         "Standing": "Junior",
         "Transcript": "www.google.com",
-        "StatementOfFees": "www.google.com",
+        "StatementOfFees": "pdf/feesCS.pdf",
         "Grades": [
             {
                 "Name": "Fall 2021-2022",
@@ -237,7 +237,7 @@
         "CompletedCredits": 15,
         "Standing": "Sophmore",
         "Transcript": "www.google.com",
-        "StatementOfFees": "www.google.com",
+        "StatementOfFees": "pdf/feesGD.pdf",
         "Grades": [
             {
                 "Name": "Fall 2021-2022",
