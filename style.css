@@ -32,13 +32,9 @@ body {
 }
 
 .overrideLogo {
-    height: 100% !important;
-    max-width: 100% !important;
+    height: 100%;
+    max-width: 100%;
 }
-.navbar-brand{
-    padding:0px !important;
-}
-
 
 
 .navbar a {
@@ -77,10 +73,6 @@ body {
 
 .dropdown-item:hover {
     background-color: rgb(247, 247, 247);
-}
-
-#navLogout:hover {
-    text-decoration: none;
 }
 
 @media(max-width: 473px) {
@@ -147,67 +139,6 @@ footer>p {
     margin-right: 20px;
 }
 
-/*cookie code*/
-.cookies-eu-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgb(49, 49, 49);
-    color: #fff;
-    padding: 6px;
-    font-size: 13px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-.cookies-eu-banner #cookieAccept {
-    font-weight: bold;
-    width: 10%;
-    text-decoration: none;
-    background: #fff;
-    color: #734b6d;
-    border: none;
-    cursor: pointer;
-    padding: 4px 7px;
-    margin: 2px 0;
-    font-size: 16px;
-    font-weight: 700;
-    transition: background 0.07s, color 0.07s, border-color 0.07s;
-}
-
-#cookieReject {
-    font-weight: bold;
-    width: 10%;
-    text-decoration: none;
-    background: #fff;
-    color: #734b6d;
-    border: none;
-    cursor: pointer;
-    padding: 4px 7px;
-    margin: 2px 0;
-    font-size: 16px;
-    font-weight: 700;
-    transition: background 0.07s, color 0.07s, border-color 0.07s;
-}
-
-.cookies-eu-banner #cookieAccept:hover,
-#cookieReject:hover {
-    font-weight: bold;
-    background-color: #734b6d;
-    color: white;
-}
-
-.cookies-eu-banner p {
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-
-
 
 /*Login Page*/
 #loginNav {
@@ -231,22 +162,12 @@ footer>p {
 #loginBody {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to top,
-            #482d5f 0%,
-            #734b6d 5%,
-            rgba(0, 0, 0, 0.05) 100%),
-        url("images/campus.jpg");
+    background:
+        linear-gradient(to top, #482d5f 0%, #734b6d 5%, rgba(0, 0, 0, 0.05) 100%),
+        url('images/campus.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     overflow: hidden;
-    -webkit-animation: slidein 50s;
-    animation: slidein 50s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
 }
 
 #loginSocials {
@@ -269,17 +190,10 @@ footer>p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 400px;
     background: white;
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
-    width: 400px;
-}
-
-@media(max-width:450px) {
-    .loginDesign {
-        width: 95%;
-        top: 35%;
-    }
 }
 
 .loginDesign h1 {
@@ -438,7 +352,6 @@ form .txt_field {
 }
 
 .homepageProfileContainer {
-    min-width: 90%;
     background-color: white;
     border-top: #734b6d 2px solid;
     border-radius: 3%;
@@ -447,42 +360,8 @@ form .txt_field {
     overflow: hidden;
     padding: 20px;
     display: flex;
-    justify-content: center;
-}
-
-.homepageProfile p:hover,
-.homepageProfile>div:hover {
-    cursor: help;
-}
-
-.homepageProfile {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-
-    min-width: 100% !important;
-}
-
-.homepageProfile #homepageProgressCredits {
-    min-width: 80% !important;
-    height: 27px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#homepageProgressCredits>div {
-    display: flex;
-    align-items: flex-start;
-}
-
-#homepageProgressCredits>div>p {
-    padding-top: 4px;
-    padding-right: 0px !important;
-    min-width: 85%;
-}
-
-#homepageProgressCredits>p {
-    padding-top: 4px;
+    justify-content: center;
 }
 
 .homepageProfileContainer img {
@@ -494,6 +373,7 @@ form .txt_field {
 }
 
 .homepageProfileContainer p {
+    text-align: center;
     margin-bottom: 15px;
     font-size: 14px;
 }
@@ -520,13 +400,14 @@ form .txt_field {
     min-height: 100%;
 }
 
+
 #homepageProgressCredits>div {
     background-color: #734b6d;
     width: 55%;
     border-radius: 13px;
     color: white;
-}
 
+}
 
 #homepageMainSection article h3 {
     color: #734b6d;
@@ -535,7 +416,7 @@ form .txt_field {
 }
 
 .card-img-top {
-    height: 30vh;
+    height: 350px;
 }
 
 .homepageReadMore {
@@ -567,26 +448,6 @@ form .txt_field {
 
 .hiddenCard {
     display: none !important;
-}
-
-button.prev,
-button.next {
-    border: none !important;
-    background: none;
-    transition: 0.5s ease-in;
-}
-
-button.prev:hover,
-button.next:hover {
-    font-size: 24px;
-}
-
-button.prev:active,
-button.prev:focus,
-button.next:active,
-button.next:focus {
-    outline: none;
-    border: none;
 }
 
 @media(max-width: 1200px) {
@@ -667,35 +528,11 @@ button.next:focus {
 
 
 /*Homepage Shortcuts */
-
-.homepageShortcut,
-.card {
-    transition: all .2s ease-in-out;
-}
-
-.homepageShortcut:hover,
-.card:hover {
-    transform: scale(1.1);
-}
-
-.homepageShortcut:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 #bb19a3);
-    font-weight: bold;
-}
-
-.homepageShortcut:first-child:hover,
-.homepageShortcut:nth-child(2):hover,
-.homepageShortcut:nth-child(3):hover {
-    filter: none !important;
-}
-
 #homepageShortcutsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-
+    justify-content: space-evenly;
 }
-
 
 .homepageShortcut {
     margin-right: 10px;
@@ -721,20 +558,13 @@ button.next:focus {
     border-radius: 100%;
 }
 
-@media (max-width: 650px) {
+@media(max-width: 570px) {
     .homepageShortcut {
         max-width: 33%;
         width: 33%;
     }
 }
 
-@media(max-width: 844px) {
-
-    #homepageShortcutsContainer {
-        justify-content: center;
-
-    }
-}
 
 /*Calendar for Homepage*/
 #homepageCalendarContainer {
@@ -752,10 +582,6 @@ button.next:focus {
 
 #homepageCalendar ul {
     list-style-type: none;
-}
-
-#monthYear {
-    padding-top: 10px;
 }
 
 #homepageCalendar .homepageMonth {
@@ -797,7 +623,7 @@ button.next:focus {
     width: 100%;
     margin: 0;
     padding: 10px 0px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 #homepageCalendar .homepageWeekdays li {
@@ -810,24 +636,16 @@ button.next:focus {
 #homepageCalendar .homepageDays {
     padding: 10px 0;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 20px;
 }
-
-#homepageCalendar .homepageDays li:hover {
-    font-size: 16px;
-    color: #734b6d !important;
-    font-weight: bold;
-}
-
 
 #homepageCalendar .homepageDays li {
     list-style-type: none;
     display: inline-block;
-    width: 12.6%;
+    width: 12%;
     text-align: center;
     margin-bottom: 5px;
     font-size: 12px;
-    transition: 0.5s ease-in-out;
 }
 
 .homepageDays .active {
@@ -843,7 +661,8 @@ button.next:focus {
 #homepageUpcomingEvents p {
     margin-top: 10px;
     font-size: 14px;
-    padding: 5px 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
 }
 
 #homepageUpcomingEvents p:first-child {
@@ -857,21 +676,12 @@ button.next:focus {
     padding-bottom: 20px !important;
 }
 
-@media (max-width: 1200px) {
+
+@media(max-width: 1200px) {
     .homepageDays .active {
-        background: #eaeaea !important;
+        background: #EAEAEA !important;
         color: BLACK !important;
     }
-
-    .homepageWeekdays {
-        min-width: 100%;
-        display: flex;
-    }
-
-    .homepageWeekdays li {
-        min-width: 14.2%;
-    }
-
 }
 
 
@@ -900,15 +710,6 @@ button.next:focus {
     margin: 40px;
 }
 
-#gpaContaineridk {
-    min-width: 70%;
-    margin-right: 40px !important;
-}
-
-#gpaAside {
-    min-width: 25%;
-}
-
 #gpaMainContainer h4,
 #gpaCalculator h4 {
     color: #734b6d;
@@ -932,12 +733,9 @@ button.next:focus {
     text-align: left;
 }
 
-#gpaAside td:not(:last-child) {
+#gpaAside td:not(:last-child),
+#gpaAside th:not(:last-child) {
     border-right: 1px solid #734b6d;
-}
-
-#gpaAside th {
-    text-align: center;
 }
 
 #gpaAside td,
@@ -955,7 +753,6 @@ button.next:focus {
 
 
 /*gpa gpacalculator*/
-
 
 .gpaOneSemester {
     border: 1px solid #EAEAEA;
@@ -1093,11 +890,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 
-#gpaMainContainer>section>div {
-    flex: 0 1 auto;
-    margin-right: 0;
-}
-
 @media(max-width: 992px) {
     #gpaMainContainer section {
         flex-direction: column;
@@ -1107,15 +899,6 @@ input[type=number]::-webkit-inner-spin-button {
     #gpaMainContainer>section>div {
         flex: 0 1 auto;
         margin-right: 0;
-    }
-
-    #gpaAside {
-        min-width: 70%;
-        margin-right: 0px !important;
-    }
-
-    #gpaContaineridk {
-        margin-right: 0px !important;
     }
 }
 
@@ -1376,275 +1159,24 @@ input[type=number]::-webkit-inner-spin-button {
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
-        min-width: 100%;
+        min-width:100%;
 
     }
 
-    #bodyRegister .classicArticle #registerControls:first-child {
-        min-width: 100%;
-    }
-
-}
-
-#registerButtonQuickAdd {
-    border-radius: 3% !important;
-}
-
-#registerInputCourseNumber,
-#registerInputCourseSection,
-#registerButtonCommit {
-    min-height: 49px;
-    border-radius: 3% !important;
-}
-
-#registerCoursesSearch {
-    min-height: 49px;
-}
-
-/*Animations*/
-
-@-webkit-keyframes slidein {
-    from {
-        background-position: center;
-        background-size: 4000px;
-    }
-
-    to {
-        background-position: -100px 0px;
-        background-size: 2000px;
-    }
-}
-
-@keyframes slidein {
-    from {
-        background-position: bottom;
-        background-size: 4000px;
-    }
-
-    to {
-        background-position: center;
-        background-size: 2000px;
+    #bodyRegister .classicArticle #registerControls:first-child{
+        min-width:100%;
     }
 
 }
 
-.babjunga {
-    animation: yuyu 1.25s ease-in-out;
+#registerButtonQuickAdd{
+    border-radius:3% !important;
+}
+#registerInputCourseNumber, #registerInputCourseSection, #registerButtonCommit{
+    min-height:49px;
+    border-radius:3% !important;
 }
 
-@keyframes yuyu {
-    from {
-        opacity: 0;
-        transform: translateX(13%);
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-.animatedCardEnterFromRight {
-    animation: EnterFromRight 0.75s ease-in-out;
-}
-
-@keyframes EnterFromRight {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.flipXUp {
-    animation: 1s anim-flipXUp infinite;
-}
-
-@keyframes anim-flipXUp {
-    0% {
-        opacity: 0;
-        transform: rotateX(90def);
-    }
-
-    50% {
-        opacity: 1;
-        transform: rotateX(720deg);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotateX(720deg);
-        animation-fill-mode: forwards;
-    }
-}
-
-.flipXDown {
-    animation: 1s anim-flipXDown infinite;
-}
-
-@keyframes anim-flipXDown {
-    0% {
-        opacity: 0;
-        transform: rotateX(720def);
-    }
-
-    50% {
-        opacity: 1;
-        transform: rotateX(90deg);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotateX(90deg);
-        animation-fill-mode: forwards;
-    }
-}
-
-.animatedLiEnterFromLeft {
-    animation: EnterFromLeft 0.75s ease-in-out;
-}
-
-@keyframes EnterFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.animatedLiEnterFromRight {
-    animation: EnterFromRight 0.75s ease-in-out;
-}
-
-@keyframes EnterFromRight {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.animatedFadeIn {
-    animation: FadeIn 0.75s ease-in-out;
-}
-
-@keyframes FadeIn {
-    from {
-        opacity: 0.25;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-#carouselExampleIndicators .active>img {
-    animation: FadeIn 1.5s ease-in-out;
-}
-
-
-/*Files*/
-
-#bodyFiles {
-    background-color: rgb(247, 247, 247);
-}
-
-#filesMainContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#filesMainContainer article {
-    width: 95% !important;
-    min-width: 95% !important;
-}
-
-#filesMainContainer .container {
-    min-width: 95% !important;
-    width: 95% !important;
-}
-
-#bodyFiles h3 {
-    color: #734b6d !important;
-    font-weight: bold;
-}
-
-#bodyFiles h4 {
-    color: black !important;
-    font-weight: normal;
-}
-
-#bodyFiles h4:nth-child(even) {
-    background-color: rgb(247, 247, 247) !important;
-}
-
-#bodyFiles footer p {
-    width: fit-content;
-}
-
-#bodyFiles footer {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-}
-
-/* #bodyFiles #filesPDF h1{
-    border:1px solid red;
-    backdrop-filter: blur(10px);
-} */
-
-.fileBodyHidden {
-    filter: blur(3px);
-}
-
-#filesPDF {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height:700px;
-    width:85%;
-}
-
-.PDF {
-    width: 100%;
-    height: 100%;
-}
-
-@media(max-width:600px){
-    #filesPDF{
-        height:400px;
-    }
-}
-
-#filesPDF button{
-    border:none;
-    outline:none;
-    background-color: #734b6d;
-    color:white;
-    font-size:24px;
-    padding:5px 11px;
-    position:absolute;
-    right:0;
-}
-
-#filesPDF button:hover{
-    color:red;
-    font-weight: bold;
-}
-
-.disabledAnchor:hover{
-    background-color: #734b6d !important;
+#registerCoursesSearch{
+    min-height:49px;
 }

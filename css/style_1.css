@@ -71,6 +71,7 @@ input[type='submit'],
     padding: 12px 15px 12px;
     font-weight: 700;
     outline: none;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 0 1px 0 rgba(0, 0, 0, 0.05);
     border-radius: 1px;
     font-family: 'SFUIText', sans-serif;
 }
@@ -329,7 +330,62 @@ label:hover:before {
 }
 /*sub menu*/
 
-
+.navigation li ul {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgba(255, 255, 255, .95);
+    width: 200px;
+    z-index: -11;
+    opacity: 0;
+    visibility: hidden;
+    /*-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;*/
+    text-align: left;
+    border: 1px solid #E0E0E0;
+}
+.navigation li ul li {
+    font-size: 12px!important;
+    margin: 0!important;
+    display: block;
+    border: none;
+    height: auto;
+    float: none!important;
+    padding: 0!important;
+    display: block!important;
+}
+.navigation li ul li a {
+    color: #1D2554;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+}
+.navigation li ul li:hover>a {
+    color: #fff;
+    background-color: #4179ba;
+}
+.navigation ul li ul ul{
+    left: 100%;
+    top: 0;
+}
+.navigation ul li:nth-child(5) ul ul{
+    left: 30%;
+}
+.navigation ul li:nth-child(4) ul ul{
+    left: 30%;
+}
+.navigation ul li:nth-child(6) ul ul{
+    left: 20%;
+}
+.navigation ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+}
 .main-header .top-part {
     position: absolute;
     top: 0;
@@ -1285,6 +1341,12 @@ label:hover:before {
     bottom: -90px;
     right: 50%;
     margin-right: -50px;
+}
+.about-wrap {
+    padding: 50px 0;
+    -webkit-box-shadow: inset 0px 0px 25px 5px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: inset 0px 0px 25px 5px rgba(50, 50, 50, 0.5);
+    box-shadow: inset 0px 0px 25px 5px rgba(50, 50, 50, 0.5);
 }
 .about-wrap h6 {
     font-size: 12px;
