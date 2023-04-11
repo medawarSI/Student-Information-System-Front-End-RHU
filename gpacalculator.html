@@ -8,14 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="bodyHomepage">
-    <nav>
-        <img src="images/logo.png" alt="RHU LOGO">
-        <ul class="navItems">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="gpacalculator.html">Academics</a></li>
-            <li><a href="homepage.html">Forms</a></li>
-            <li><a href="files2.html">Files</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarOverride">
+        <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" alt="RHU" class="overrideLogo"></a>
+
+        <button class="navbar-toggler overrideToggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="homepage.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle overrideNavItem" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Academics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="gpa.html">GPA</a>
+                        <a class="dropdown-item" href="studyplan.html">Study Plan</a>
+                        <a class="dropdown-item" href="courseregistration.html">Course Registration</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="files.html">Files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="index.html" id="navLogout">Logout</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div id="gpaSectionsContainers">
