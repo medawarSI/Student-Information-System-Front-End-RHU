@@ -196,9 +196,18 @@ body>div>div>div.right-side-contactus>div {
   color: #734b6d !important;
 }
 
+
+body>div>div>div.right-side-contactus>form>div>input[type=text],
+textarea {
+  background-color: white !important;
+  border: 1px solid #eaeaea !important;
+}
+
 body>div>div>div.right-side-contactus>form>div>input[type=text]:active,
-body>div>div>div.right-side-contactus>form>div>input[type=text]:focus {
-  border-color: #3B71CA;
+body>div>div>div.right-side-contactus>form>div>input[type=text]:focus,
+textarea:focus,
+textarea:active {
+  border-color: #3B71CA !important;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #3B71CA;
   outline: 0 none;
 }

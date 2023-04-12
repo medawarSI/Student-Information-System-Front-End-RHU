@@ -3,13 +3,25 @@ let hasAddedSemester = false;
 
 
 $("#navLogout").click(function () {
-  Cookies.remove('username');
+  Cookies.set('username', 'nothing')
 });
+
+$("#navClearCookies").click(function () {
+  Cookies.set('username', 'nothing')
+  Cookies.set('accept', false);
+})
+
 
 $(document).ready(function () {
   //Login Page
 
   if (document.title == "RHU SIS") {
+    //if username cookie isnt null go quickly to homepage
+    let x = Cookies.get("username");
+    if (Cookies.get("username") != "nothing") {
+      window.location.assign("homepage.html");
+    }
+
     hasBeenWrong = false; //variable to determine whether or not to remove past mistakes that are red
     let btnLogin = document.getElementById("btnLogin");
     let passwordInput = document.getElementById("txtLoginPassword");
@@ -104,7 +116,7 @@ $(document).ready(function () {
             }
             countJsonObjects++;
           });
-          if (!hasBeenWrong) {
+          if (!hasBeenWrong && !hasFound) {
             let divLoginDesignHeader = document.getElementById("loginDesignHeader");
             if (hasBeenWrong == true) {
               divLoginDesignHeader.removeChild(divLoginDesignHeader.lastChild);
@@ -123,6 +135,16 @@ $(document).ready(function () {
     let globalUsername = Cookies.get('username');
     let savedIndex = 0;
     let savedIndexSaved = 0;
+
+    fetch("users.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((item) => {
+          if (item.ID == globalUsername) {
+            $("#pleaseSTOP").attr("src", item.Picture);
+          }
+        });
+      });
 
     //fetch user info
     fetch("studyplan.json")
@@ -259,6 +281,7 @@ $(document).ready(function () {
     //   });
   } else if (document.title == "Profile") {
 
+
     let nbrCompletedCredits = 0, nbrTotalCredits = 0;
     let globalUsername = Cookies.get('username');
     let savedIndex = 0;
@@ -271,6 +294,7 @@ $(document).ready(function () {
         data.forEach((item) => {
           let x = item.ID
           if (item.ID == globalUsername) {
+            $("#pleaseSTOP").attr("src", item.Picture);
             savedIndexSaved = savedIndex;
             return;
           } else {
@@ -278,6 +302,131 @@ $(document).ready(function () {
           }
         });
       });
+
+
+    //fetch schedule info
+    //gonna have to be more detailed with this in terms of comments
+    fetch("users.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((item) => {
+          if (item.ID == globalUsername) {
+            //declare time slot arrays of each day 
+            arrMonday = [];
+            let M = 0;
+
+            arrTuesday = [];
+            let T = 0;
+
+            arrWednesday = [];
+            let W = 0;
+
+            arrThursday = [];
+            let R = 0;
+
+            arrFriday = [];
+            let F = 0;
+
+            //fill in the information about starttimes and end times in the array
+            item.CurrentCourses.forEach((nestedItem) => {
+              if (nestedItem.Days.includes("M")) {
+                arrMonday[M] = nestedItem.StartTime;
+                M++;
+                arrMonday[M] = nestedItem.EndTime;
+                M++;
+              }
+              if (nestedItem.Days.includes("W")) {
+                arrWednesday[W] = nestedItem.StartTime;
+                W++;
+                arrWednesday[W] = nestedItem.EndTime;
+                W++;
+              }
+              if (nestedItem.Days.includes("T")) {
+                arrTuesday[T] = nestedItem.StartTime;
+                T++;
+                arrTuesday[T] = nestedItem.EndTime;
+                T++;
+              }
+              if (nestedItem.Days.includes("R")) {
+                arrThursday[R] = nestedItem.StartTime;
+                R++;
+                arrThursday[R] = nestedItem.EndTime;
+                R++;
+              }
+              if (nestedItem.Days.includes("F")) {
+                arrFriday[F] = nestedItem.StartTime;
+                F++;
+                arrFriday[F] = nestedItem.EndTime;
+                F++;
+              }
+
+            });
+
+            //fill in the arr information in a weekly schedule table
+            for (let i = 0; i < arrMonday.length; i++) {
+              let xStart = arrMonday[i].charAt(0) + arrMonday[i].charAt(1);
+              let xEnd = arrMonday[i].charAt(3) + arrMonday[i].charAt(4);
+
+              if ($("#profileTBody tr").children().eq(0).html() == arrMonday[i] || $(this).children().eq(0).html().includes(xStart)) {
+                $(this).children().eq(1).css("background-color", "#add8e6");
+              }
+              $("#profileTBody tr td:nth-child(2)").each(function (index) {
+                if ($(this).parent().children().eq(0).html() == arrMonday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
+                  $(this).parent().children().eq(1).css("background-color", "#add8e6");
+                }
+              })
+
+            }
+
+            //fill in the arr information in a weekly schedule table
+            for (let i = 0; i < arrTuesday.length; i++) {
+              let xStart = arrTuesday[i].charAt(0) + arrTuesday[i].charAt(1);
+              let xEnd = arrTuesday[i].charAt(3) + arrTuesday[i].charAt(4);
+
+              $("#profileTBody tr td:nth-child(3)").each(function (index) {
+                if ($(this).parent().children().eq(0).html() == arrTuesday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
+                  $(this).parent().children().eq(2).css("background-color", "#f9f777");
+                }
+              })
+            }
+
+            for (let i = 0; i < arrWednesday.length; i++) {
+              let xStart = arrWednesday[i].charAt(0) + arrWednesday[i].charAt(1);
+              let xEnd = arrWednesday[i].charAt(3) + arrWednesday[i].charAt(4);
+
+              $("#profileTBody tr td:nth-child(4)").each(function (index) {
+                if ($(this).parent().children().eq(0).html() == arrWednesday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
+                  $(this).parent().children().eq(3).css("background-color", "#add8e6");
+                }
+              })
+            }
+
+            for (let i = 0; i < arrThursday.length; i++) {
+              let xStart = arrThursday[i].charAt(0) + arrThursday[i].charAt(1);
+              let xEnd = arrThursday[i].charAt(3) + arrThursday[i].charAt(4);
+
+              $("#profileTBody tr td:nth-child(5)").each(function (index) {
+                if ($(this).parent().children().eq(0).html() == arrThursday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
+                  $(this).parent().children().eq(4).css("background-color", "#f9f777");
+                }
+              })
+            }
+
+            for (let i = 0; i < arrFriday.length; i++) {
+              let xStart = arrFriday[i].charAt(0) + arrFriday[i].charAt(1);
+              let xEnd = arrFriday[i].charAt(3) + arrFriday[i].charAt(4);
+
+              $("#profileTBody tr td:nth-child(6)").each(function (index) {
+                if ($(this).parent().children().eq(0).html() == arrFriday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
+                  $(this).parent().children().eq(5).css("background-color", "#f9f777");
+                }
+              })
+            }
+
+          }
+        });
+      });
+
 
     //fetch user info once again because Im scared of that return code at line 284 :P
     fetch("users.json")
@@ -313,7 +462,6 @@ $(document).ready(function () {
 
             let progress = parseFloat(nbrCompletedCredits) * 100;
             progress = parseFloat(progress) / parseFloat(nbrTotalCredits);
-            console.log(progress);
             $("#profileProgressBar > div > span").attr("data-progress", parseInt(progress));
             $(".animated-progress span").each(function () {
               $(this).animate(
@@ -348,8 +496,11 @@ $(document).ready(function () {
       });
 
   } else if (document.title == "Homepage") {
-    if (Cookies.get('accept'))
+    let x = Cookies.get('accept');
+    if (x == 'true') {
       $(".cookies-eu-banner").remove();
+      console.log("this shouldnt be here")
+    }
 
     $("#cookieAccept").click(function () {
       Cookies.set('accept', true);
@@ -403,6 +554,7 @@ $(document).ready(function () {
       .then((data) => {
         data.forEach((item) => {
           if (item.ID == globalUsername) {
+            $("#pleaseSTOP").attr("src", item.Picture);
             $(".profileimg").attr("src", item.Picture);
             $(".profileimg").attr("alt", "RHU Student");
             $("#homepageProfileFirstP").html(item.Name);
@@ -496,8 +648,49 @@ $(document).ready(function () {
       btnThree.addClass("homepageActivated");
     });
   } else if (document.title == "Course Registration") {
+    let globalUsername = Cookies.get('username');
+
+    fetch("users.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((item) => {
+          if (item.ID == globalUsername) {
+            $("#pleaseSTOP").attr("src", item.Picture);
+          }
+        });
+      });
     loadCourses();
     ////////just here to fill in the space :P
+  }
+  else if (document.title == "Academic Forms") {
+    let globalUsername = Cookies.get('username');
+
+    //fetch user info
+    fetch("users.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((item) => {
+          if (item.ID == globalUsername) {
+            $("#pleaseSTOP").attr("src", item.Picture);
+            return;
+          }
+        });
+      });
+  }
+  else if (document.title == "Contact Us") {
+    let globalUsername = Cookies.get('username');
+
+    //fetch user info
+    fetch("users.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((item) => {
+          if (item.ID == globalUsername) {
+            $("#pleaseSTOP").attr("src", item.Picture);
+            return;
+          }
+        });
+      });
   }
   else if (document.title == "GPA") {
     let globalUsername = Cookies.get('username');
@@ -510,6 +703,7 @@ $(document).ready(function () {
       .then((data) => {
         data.forEach((item) => {
           if (item.ID == globalUsername) {
+            $("#pleaseSTOP").attr("src", item.Picture);
             savedIndexSaved = savedIndex
             return;
           }
@@ -1426,6 +1620,7 @@ function descheduleCourse(el) {
   else {
     if (confirm("The course will be dropped\nPress OK to confirm.")) {
       row.removeClass("confirmed");
+      row.removeClass("scheduled");
     } else {
       return;
     }
@@ -1503,6 +1698,9 @@ function commitCourses(el) {
   //check if user has already registered for this course but in a different section
   if (checkSameSection(scheduledLength, confirmedLength)) return;
 
+  //same as above but for simulatenous adding
+  if (checkSameNameSimultaneously(scheduledLength)) return;
+
   //loop over every row with the class scheduled
   $(".scheduled").each(function (i) {
     //check if true
@@ -1569,6 +1767,42 @@ function quickAddCourse(el) {
     return;
   }
 
+  
+
+  let hasErred = false;
+  //check if user has already registered for this course but in a different section
+  $(".confirmed").each(function (i) {
+    if (
+      $(this).children().eq(1) == courseNumber.toUpperCase() &&
+      $(this).children().eq(2) != courseSection
+    ) {
+      alert(
+        "The scheduled course " +
+        courseNumber +
+        " has already been confirmed registered for another section"
+      );
+      hasErred = true;
+      $(savedRow).removeClass("scheduled");
+    }
+  });
+  //same as above but same course different name
+  for (let i = 0; i < confirmedLength; i++) {
+    $(".confirmed").each(function (i) {
+      let oi = $(this).children().eq(1).html();
+      let io = courseNumber.toUpperCase();
+      if (
+        $(this).children().eq(1).html() == courseNumber.toUpperCase()
+      ) {
+        alert(
+          "The scheduled course " +
+          courseNumber +
+          " has already been confirmed registered for another section"
+        );
+        hasErred = true;
+      }
+    });
+  }
+
   //compare the times for overlaps
   if (
     hasOverlap(
@@ -1606,41 +1840,31 @@ function quickAddCourse(el) {
     $(savedRow).removeClass("scheduled");
     return; //not available
   }
-
-  let hasErred = false;
-  //check if user has already registered for this course but in a different section
-  $(".confirmed").each(function (i) {
-    if (
-      $(this).children().eq(1) == courseNumber.toUpperCase() &&
-      $(this).children().eq(2) != courseSection
-    ) {
-      alert(
-        "The scheduled course " +
-        courseNumber +
-        " has already been confirmed registered for another section"
-      );
-      hasErred = true;
-      $(savedRow).removeClass("scheduled");
-    }
-  });
-  if (hasErred) return;
+  if (hasErred){
+    $(savedRow).removeClass("scheduled");
+    return;
+  } 
 
   $(savedRow).removeClass("scheduled");
   $(savedRow).addClass("confirmed");
+
+  $(savedRow).children().eq(0).html
+
   let z = $(savedRow).children().eq(8).html() - 1;
-  $(savedRow).children().eq(8).html(z);
+  $(savedRow).children().eq(0).children().eq(0).html("X");
+  $(savedRow).children().eq(0).children().eq(0)("onclick", "descheduleCourse(this)");
   setCreditScore();
 }
 
 function convertTimeFormat(time) {
-  let date = new Date(`01/01/2022 ${time}`);
+  let date = new Date('01/01/2022 ${time}');
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  hours = hours < 10 ? `0${hours}` : hours;
-  minutes = minutes < 10 ? `0${minutes}` : minutes;
-  seconds = seconds < 10 ? `0${seconds}` : seconds;
-  return `${hours}:${minutes}:${seconds}`;
+  hours = hours < 10 ? '0${hours}' : hours;
+  minutes = minutes < 10 ? '0${minutes}' : minutes;
+  seconds = seconds < 10 ? '0${seconds}' : seconds;
+  return '${hours}:${minutes}:${seconds}';
 }
 
 //convert time to milliseconds
@@ -1747,6 +1971,24 @@ function checkSameSection(scheduledLength, confirmedLength) {
   return false;
 }
 
+function checkSameNameSimultaneously(scheduledLength) {
+  for (let i = 0; i < scheduledLength; i++) {
+    let iInput = $(".scheduled");
+    let iInputString = JSON.stringify($(iInput[i]).children().eq(1).html());
+    for (let j = i + 1; j < scheduledLength; j++) {
+      let jInput = $(".scheduled");
+      let jInputString = JSON.stringify($(jInput[j]).children().eq(1).html());
+      if (iInputString == jInputString) {
+        alert(
+          "You can't register for 2 equivalent courses!: " + iInputString
+        );
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
 function checkDaysOverlap(confirmedDate, scheduledDate) {
   for (let i = 0; i < confirmedDate.length; i++) {
     for (let j = 0; j < scheduledDate.length; j++) {
@@ -1809,7 +2051,7 @@ function hasOverlappedBetweenScheduled(
   return false;
 }
 
-//navbar code
+//navbar code i forgot what this was for lol
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {

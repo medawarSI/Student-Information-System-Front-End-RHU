@@ -22,6 +22,38 @@
         "Standing": "Junior",
         "Transcript": "www.google.com",
         "StatementOfFees": "pdf/feesCS.pdf",
+        "CurrentCourses":[
+            {
+                "CourseName":"COSC333",
+                "Days":"MW",
+                "StartTime":"08:00",
+                "EndTime": "09:15"
+            },
+            {
+                "CourseName":"MATH311",
+                "Days":"MW",
+                "StartTime":"15:30",
+                "EndTime": "16:45"
+            },
+            {
+                "CourseName":"ARAB212",
+                "Days":"TR",
+                "StartTime":"12:00",
+                "EndTime": "12:50"
+            },
+            {
+                "CourseName":"CCEE310",
+                "Days":"TR",
+                "StartTime":"13:30",
+                "EndTime": "14:45"
+            },
+            {
+                "CourseName":"SOCI310",
+                "Days":"TR",
+                "StartTime":"15:00",
+                "EndTime": "16:15"
+            }
+        ],
         "Grades": [
             {
                 "Name": "Fall 2021-2022",
@@ -259,6 +291,38 @@
         "Standing": "Sophmore",
         "Transcript": "www.google.com",
         "StatementOfFees": "pdf/feesGD.pdf",
+        "CurrentCourses":[
+            {
+                "CourseName":"GRDS205",
+                "Days":"MW",
+                "StartTime":"09:00",
+                "EndTime": "10:15"
+            },
+            {
+                "CourseName":"GRDS222",
+                "Days":"MW",
+                "StartTime":"13:30",
+                "EndTime": "14:45"
+            },
+            {
+                "CourseName":"FADR202",
+                "Days":"TR",
+                "StartTime":"12:00",
+                "EndTime": "13:15"
+            },
+            {
+                "CourseName":"FADR210",
+                "Days":"TR",
+                "StartTime":"13:30",
+                "EndTime": "14:45"
+            },
+            {
+                "CourseName":"FADR222",
+                "Days":"TR",
+                "StartTime":"15:30",
+                "EndTime": "16:45"
+            }
+        ],
         "Grades": [
             {
                 "Name": "Fall 2021-2022",

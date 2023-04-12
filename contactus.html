@@ -19,8 +19,11 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="
+  https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" href="contactus.css">
 </head>
 
@@ -61,10 +64,26 @@
         <li class="nav-item">
           <a class="nav-link overrideNavItem" href="contactus.html">Contact Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link overrideNavItem" href="index.html" id="navLogout">Logout</a>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown" style="list-style-type: none;" id="STAHP">
+          <a class="nav-link dropdown-toggle overrideNavItem" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="" alt="pfp" id="pleaseSTOP" style="border:1px double #734b6d;">
+          </a>
+          <div class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index.html" id="navLogout">Logout</a>
+            <a class="dropdown-item" href="index.html" id="navClearCookies">Clear Cookies</a>
+          </div>
         </li>
       </ul>
+
+      <!-- <a class="nav-link overrideNavItem" href="index.html" id="navLogout">Logout</a>
+        <a class="nav-link overrideNavItem" href="index.html" id="navLogout">
+            <img src="" alt="pfp" id="pleaseSTOP">
+        </a> -->
+
     </div>
   </nav>
 
@@ -95,13 +114,13 @@
         <p>We will get to you in 2 working days.</p>
         <form action="https://formsubmit.co/harebmm@students.rhu.edu.lb" method="POST">
           <div class="input-box-contactus">
-            <input type="text" name="name" placeholder="Enter your name">
+            <input type="text" name="name" placeholder="Enter your name" required>
           </div>
           <div class="input-box-contactus">
-            <input type="text" name="email" placeholder="Enter your email">
+            <input type="text" name="email" placeholder="Enter your email" required>
           </div>
           <div class="input-box-contactus message-box-contactus">
-            <input type="text" name="inquiry" placeholder="Enter your inquiry">
+            <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Enter your message" required></textarea>
           </div>
           <div class="button-contactus">
             <button type="submit">Send Us</button>
@@ -122,6 +141,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="main.js"></script>
 
 
 </body>
