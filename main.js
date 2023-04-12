@@ -4,7 +4,6 @@ let hasAddedSemester = false;
 
 $("#navLogout").click(function () {
   Cookies.remove('username');
-  window.open("index.html");
 });
 
 $(document).ready(function () {
@@ -13,17 +12,45 @@ $(document).ready(function () {
   if (document.title == "RHU SIS") {
     hasBeenWrong = false; //variable to determine whether or not to remove past mistakes that are red
     let btnLogin = document.getElementById("btnLogin");
-    let password = document.getElementById("txtLoginPassword");
+    let passwordInput = document.getElementById("txtLoginPassword");
+    let usernameInput = document.getElementById("txtLoginUsername");
+    let text = document.getElementById("text");
+
 
     //when enter is pressed
     $(document).on('keypress', function (e) {
       if (e.which == 13) {
         $(btnLogin).trigger('click');
-        console.log("Youre not supposed to see this");
       }
     });
 
+    passwordInput.addEventListener("keyup", function (event) {
+
+      // If "caps lock" is pressed, display the warning text
+      if (event.getModifierState("CapsLock")) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none"
+      }
+    });
+
+    usernameInput.addEventListener("keyup", function (event) {
+
+      // If "caps lock" is pressed, display the warning text
+      if (event.getModifierState("CapsLock")) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none"
+      }
+    });
+    let countJsonObjects = 0;
+
     btnLogin.addEventListener("click", function () {
+      let divLoginDesignHeader = document.getElementById("loginDesignHeader");
+      if (hasBeenWrong == true) {
+        divLoginDesignHeader.removeChild(divLoginDesignHeader.lastChild);
+      }
+      hasBeenWrong = false;
       let username = document.getElementById("txtLoginUsername").value;
       let password = document.getElementById("txtLoginPassword").value;
 
@@ -58,14 +85,35 @@ $(document).ready(function () {
                 if (hasBeenWrong == true) {
                   divLoginDesignHeader.removeChild(divLoginDesignHeader.lastChild);
                 }
-                //this is not working ~Abed 
+                //this is not working ~Abed ~~~~~~~~
+                let txt = document.createElement("p");
+                txt.innerHTML = "Invalid username or password! Please try again";
+                divLoginDesignHeader.appendChild(txt);
+                hasBeenWrong = true;
+              }
+              else if ((username == item.ID && item.Password != password)) {
+                let divLoginDesignHeader = document.getElementById("loginDesignHeader");
+                if (hasBeenWrong == true) {
+                  divLoginDesignHeader.removeChild(divLoginDesignHeader.lastChild);
+                }
                 let txt = document.createElement("p");
                 txt.innerHTML = "Invalid username or password! Please try again";
                 divLoginDesignHeader.appendChild(txt);
                 hasBeenWrong = true;
               }
             }
+            countJsonObjects++;
           });
+          if (!hasBeenWrong) {
+            let divLoginDesignHeader = document.getElementById("loginDesignHeader");
+            if (hasBeenWrong == true) {
+              divLoginDesignHeader.removeChild(divLoginDesignHeader.lastChild);
+            }
+            let txt = document.createElement("p");
+            txt.innerHTML = "No one with that username exists!";
+            divLoginDesignHeader.appendChild(txt);
+            hasBeenWrong = true;
+          }
         });
     }
 
@@ -74,6 +122,7 @@ $(document).ready(function () {
 
     let globalUsername = Cookies.get('username');
     let savedIndex = 0;
+    let savedIndexSaved = 0;
 
     //fetch user info
     fetch("studyplan.json")
@@ -81,9 +130,13 @@ $(document).ready(function () {
       .then((data) => {
         data.forEach((item) => {
           if (item.ID == globalUsername) {
+            savedIndexSaved = savedIndex;
             return;
           }
-          savedIndex++;
+          else {
+
+            savedIndex++;
+          }
         });
       });
 
@@ -95,7 +148,7 @@ $(document).ready(function () {
       .then((response) => response.json())
       .then((data) => {
         const tbody = document.querySelector("#studyplantable tbody");
-        $.each(data[savedIndex].StudyPlan, function (index, item) {
+        $.each(data[savedIndexSaved].StudyPlan, function (index, item) {
           const row = document.createElement("tr");
           //data-toggle='tooltip' data-placement='top' title='Today'
           $(row).prop("toggle", "tooltip");
@@ -204,6 +257,96 @@ $(document).ready(function () {
 
     //     });
     //   });
+  } else if (document.title == "Profile") {
+
+    let nbrCompletedCredits = 0, nbrTotalCredits = 0;
+    let globalUsername = Cookies.get('username');
+    let savedIndex = 0;
+    let savedIndexSaved = 0;
+
+    //fetch user info
+    fetch("users.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((item) => {
+          let x = item.ID
+          if (item.ID == globalUsername) {
+            savedIndexSaved = savedIndex;
+            return;
+          } else {
+            savedIndex++;
+          }
+        });
+      });
+
+    //fetch user info once again because Im scared of that return code at line 284 :P
+    fetch("users.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((item) => {
+          if (item.ID == globalUsername) {
+            $("#profilePFP").attr("src", item.Picture);
+            $("#profileSecondaryContainer .classicArticle:first-child h4").html(item.ID);
+            $("#profileSecondaryContainer > article:nth-child(1) > p:nth-child(3)").html(item.Name);
+            $("#profileSecondaryContainer > article:nth-child(1) > p:nth-child(4)").html(item.Major);
+            $("#profileSecondaryContainer > article:nth-child(1) > p:nth-child(5)").html(item.Department);
+            $("#profileSecondaryContainer > article:nth-child(1) > p:nth-child(6)").html(item.College);
+
+            $("#profileSecondaryContainer > article:nth-child(2) > div:nth-child(2) > p").html(item.ID);
+            $("#profileSecondaryContainer > article:nth-child(2) > div:nth-child(3) > p").html(item.FirstName);
+            $("#profileSecondaryContainer > article:nth-child(2) > div:nth-child(4) > p").html(item.MiddleName);
+            $("#profileSecondaryContainer > article:nth-child(2) > div:nth-child(5) > p").html(item.LastName);
+            $("#profileSecondaryContainer > article:nth-child(2) > div:nth-child(6) > p").html(item.Nationality);
+            $("#profileSecondaryContainer > article:nth-child(2) > div:nth-child(7) > p").html(item.Address);
+            $("#profileSecondaryContainer > article:nth-child(2) > div:nth-child(8) > p").html(item.Email);
+            $("#profileSecondaryContainer > article:nth-child(2) > div:nth-child(9) > p").html(item.Phone);
+
+            $("#profileCardDeck > div:nth-child(1) > div > p:nth-child(2)").html(item.Status);
+            $("#profileCardDeck > div:nth-child(2) > div > p:nth-child(2)").html(item.CurrentCredits);
+            $("#profileCardDeck > div:nth-child(3) > div > p:nth-child(2)").html(parseInt(item.NeededCredits) - parseInt(item.CompletedCredits));
+            $("#profileCardDeck > div:nth-child(4) > div > p:nth-child(2)").html(parseFloat(item.CGPA));
+
+            nbrCompletedCredits = item.CompletedCredits;
+            nbrTotalCredits = item.NeededCredits;
+
+            //Progress bar code
+
+            let progress = parseFloat(nbrCompletedCredits) * 100;
+            progress = parseFloat(progress) / parseFloat(nbrTotalCredits);
+            console.log(progress);
+            $("#profileProgressBar > div > span").attr("data-progress", parseInt(progress));
+            $(".animated-progress span").each(function () {
+              $(this).animate(
+                {
+                  width: $(this).attr("data-progress") + "%",
+                },
+                2000
+              );
+              $(this).text($(this).attr("data-progress") + "%");
+            });
+
+          }
+
+        });
+      });
+
+
+
+    //fetch gpa info
+    fetch("users.json")
+      .then((response) => response.json())
+      .then((data) => {
+
+        $.each(data[savedIndexSaved].Grades, function (index, term) {
+          $("#gpaGradeSelect").append("<option>" + term.Name + "</option>")
+          $.each(term.Courses, function (index, course) {
+            //cursed code, better come back to fix this later
+          });
+        });
+
+        loadGpaTablesProfile(savedIndexSaved);
+      });
+
   } else if (document.title == "Homepage") {
     if (Cookies.get('accept'))
       $(".cookies-eu-banner").remove();
@@ -359,6 +502,7 @@ $(document).ready(function () {
   else if (document.title == "GPA") {
     let globalUsername = Cookies.get('username');
     let savedIndex = 0;
+    let savedIndexSaved = 0;
 
     //fetch user info
     fetch("users.json")
@@ -366,9 +510,12 @@ $(document).ready(function () {
       .then((data) => {
         data.forEach((item) => {
           if (item.ID == globalUsername) {
+            savedIndexSaved = savedIndex
             return;
           }
-          savedIndex++;
+          else {
+            savedIndex++;
+          }
         });
       });
 
@@ -377,7 +524,7 @@ $(document).ready(function () {
       .then((response) => response.json())
       .then((data) => {
 
-        $.each(data[savedIndex].Grades, function (index, term) {
+        $.each(data[savedIndexSaved].Grades, function (index, term) {
           $("#gpaGradeSelect").append("<option>" + term.Name + "</option>")
           $.each(term.Courses, function (index, course) {
             //cursed code, better come back to fix this later
@@ -386,7 +533,7 @@ $(document).ready(function () {
 
 
 
-        loadGpaTables(savedIndex);
+        loadGpaTables(savedIndexSaved);
       });
   }
 
@@ -486,14 +633,12 @@ function getMonthName(month) {
 
 function loadGpaTables(savedIndex) {
   let blabla = 0;
-  console.log("Load GPA Tables before for each: " + savedIndex)
 
   //append a grades table
   fetch("users.json")
     .then((response) => response.json())
     .then((data) => {
       $.each(data[savedIndex].Grades, function (index, term) {
-        console.log(data[savedIndex]);
         $("#gpaGrades").append('<div class="gpaGradeTableContainer table-responsive"><table class="table" id="gpaGradesTable"><thead><tr><th scope="col">Course Title</th><th scope="col">Credits</th><th scope="col">Pass</th><th scope="col">Grade</th><th scope="col">Letter Grade</th></tr></thead><tbody></tbody></table><div class="gpaGradeTableGrades"></div></div>');
         $.each(term.Courses, function (index, course) {
           let x = $("#gpaGrades").children().eq(blabla + 2).children().eq(0).children().eq(1);
@@ -506,6 +651,8 @@ function loadGpaTables(savedIndex) {
       getGrades();
     });
 }
+
+
 
 function getGrades() {
   let x = $("#gpaGradeSelect").prop('selectedIndex');
@@ -1679,7 +1826,6 @@ function displayPDF(el) {
 
   $("body>*:not(#filesPDF)").addClass("fileBodyHidden");
   $("#filesPDF").removeClass("hidden");
-  console.log($(el).parent().parent().children().eq(0).children().eq(0).children().eq(1).html());
   if ($(el).parent().parent().children().eq(0).children().eq(0).children().eq(1).html().includes("Tuition Fees")) {
     src = "pdf/tuition.pdf";
     $("#filesPDF").append("<iframe class='PDF' src='" + src + "' frameborder='0'></iframe>");
@@ -1694,7 +1840,6 @@ function displayPDF(el) {
       .then((data) => {
         data.forEach((item) => {
           if (item.ID == globalUsername) {
-            console.log(item.StatementOfFees);
             src = item.StatementOfFees;
             //i hate asynchronous functions :) //class = pdf frameborder=0 check ur link
             $("#filesPDF").append("<iframe class='PDF' src='" + src + "' frameborder='0'></iframe>");
@@ -1716,4 +1861,33 @@ function closePDF(el) {
   $("#bodyFiles .download").each(function () {
     $(this).removeClass("disabledAnchor");
   });
+}
+
+function loadGpaTablesProfile(savedIndex) {
+  let blabla = 0;
+
+  //append a grades table
+  fetch("users.json")
+    .then((response) => response.json())
+    .then((data) => {
+      $.each(data[savedIndex].Grades, function (index, term) {
+        $("#profileGrades").append('<div class="gpaGradeTableContainer table-responsive"><table class="table" id="gpaGradesTable"><thead><tr><th scope="col">Course Title</th><th scope="col">Credits</th><th scope="col">Pass</th><th scope="col">Grade</th><th scope="col">Letter Grade</th></tr></thead><tbody></tbody></table><div class="gpaGradeTableGrades"></div></div>');
+        $.each(term.Courses, function (index, course) {
+          let x = $("#profileGrades").children().eq(blabla + 2).children().eq(0).children().eq(1);
+          $("#profileGrades").children().eq(blabla + 2).children().eq(0).children().eq(1).append('<tr><td data-toggle="tooltip" data-placement="top" title="' + course["Course Description"] + '"style="cursor:help;">' + course.CourseName + '</td><td>' + course.Credit + '</td><td>' + course.Pass + '</td><td>' + course.Grade + '</td><td>' + course.LetterGrade + '</td></tr>');
+        });
+        $("#profileGrades").children().eq(blabla + 2).children().eq(1).append('<p><b>Term GPA: </b>' + term.TermGpa + '</p>');
+        $("#profileGrades").children().eq(blabla + 2).children().eq(1).append('<p><b>Cumulative GPA: </b>' + term.CumGpa + '</p>')
+        blabla++;
+      });
+      getGradesProfile();
+    });
+}
+
+function getGradesProfile() {
+  let x = $("#gpaGradeSelect").prop('selectedIndex');
+  $(".gpaGradeTableContainer").each(function () {
+    $(this).addClass("hidden");
+  })
+  $("#profileGrades").children().eq(x + 2).removeClass("hidden");
 }
