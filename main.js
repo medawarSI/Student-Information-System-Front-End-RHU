@@ -18,7 +18,7 @@ $(document).ready(function () {
   if (document.title == "RHU SIS") {
     //if username cookie isnt null go quickly to homepage
     let x = Cookies.get("username");
-    if (Cookies.get("username") != "nothing") {
+    if (Cookies.get("username") != "nothing" && Cookies.get("username") != null) {
       window.location.assign("homepage.html");
     }
 
