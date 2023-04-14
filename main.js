@@ -1938,15 +1938,27 @@ function quickAddCourse(el) {
   setCreditScore();
 }
 
+// function convertTimeFormat(time) {
+//   let date = new Date('01/01/2022 ${time}');
+//   let hours = date.getHours();
+//   let minutes = date.getMinutes();
+//   let seconds = date.getSeconds();
+//   hours = hours < 10 ? '0${hours}' : hours;
+//   minutes = minutes < 10 ? '0${minutes}' : minutes;
+//   seconds = seconds < 10 ? '0${seconds}' : seconds;
+//   return '${hours}:${minutes}:${seconds}';
+// }
+
+//why is there such a difference between the single quotation in the function up and the single quotation down here :( This function does not working up
 function convertTimeFormat(time) {
-  let date = new Date('01/01/2022 ${time}');
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-  hours = hours < 10 ? '0${hours}' : hours;
-  minutes = minutes < 10 ? '0${minutes}' : minutes;
-  seconds = seconds < 10 ? '0${seconds}' : seconds;
-  return '${hours}:${minutes}:${seconds}';
+    let date = new Date(`01/01/2022 ${time}`);
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    hours = hours < 10 ? `0${hours}` : hours;
+    minutes = minutes < 10 ? `0${minutes}` : minutes;
+    seconds = seconds < 10 ? `0${seconds}` : seconds;
+    return `${hours}:${minutes}:${seconds}`;
 }
 
 //convert time to milliseconds
