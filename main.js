@@ -12,6 +12,22 @@ $("#navClearCookies").click(function () {
 })
 
 
+let x = Cookies.get('accept');
+if (x == 'true') {
+  $(".cookies-eu-banner").remove();
+}
+
+$("#cookieAccept").click(function () {
+  Cookies.set('accept', true);
+  $(".cookies-eu-banner").remove();
+});
+$("#cookieReject").click(function () {
+  Cookies.remove('username');
+  Cookies.remove('accept');
+  window.open('index.html');
+})
+
+
 $(document).ready(function () {
   //Login Page
 
@@ -305,7 +321,7 @@ $(document).ready(function () {
 
 
     //fetch schedule info
-    //gonna have to be more detailed with this in terms of comments
+    //Yes i am aware this can be done in a significantly easier and cleaner way
     fetch("users.json")
       .then((response) => response.json())
       .then((data) => {
@@ -313,71 +329,88 @@ $(document).ready(function () {
           if (item.ID == globalUsername) {
             //declare time slot arrays of each day 
             arrMonday = [];
+            arrMondayNames = [];
             let M = 0;
-
+            //arrmondaynames
             arrTuesday = [];
+            arrTuesdayNames = [];
             let T = 0;
 
             arrWednesday = [];
+            arrWednesdayNames = [];
             let W = 0;
 
             arrThursday = [];
+            arrThursdayNames = [];
             let R = 0;
 
             arrFriday = [];
+            arrFridayNames = [];
             let F = 0;
 
             //fill in the information about starttimes and end times in the array
             item.CurrentCourses.forEach((nestedItem) => {
               if (nestedItem.Days.includes("M")) {
                 arrMonday[M] = nestedItem.StartTime;
+                arrMondayNames[M] = nestedItem.CourseName;
                 M++;
                 arrMonday[M] = nestedItem.EndTime;
+                arrMondayNames[M] = nestedItem.CourseName;
                 M++;
               }
               if (nestedItem.Days.includes("W")) {
                 arrWednesday[W] = nestedItem.StartTime;
+                arrWednesdayNames[W] = nestedItem.CourseName;
                 W++;
                 arrWednesday[W] = nestedItem.EndTime;
+                arrWednesdayNames[W] = nestedItem.CourseName;
                 W++;
               }
               if (nestedItem.Days.includes("T")) {
                 arrTuesday[T] = nestedItem.StartTime;
+                arrTuesdayNames[T] = nestedItem.CourseName
                 T++;
                 arrTuesday[T] = nestedItem.EndTime;
+                arrTuesdayNames[T] = nestedItem.CourseName;
                 T++;
               }
               if (nestedItem.Days.includes("R")) {
                 arrThursday[R] = nestedItem.StartTime;
+                arrThursdayNames[R] = nestedItem.CourseName;
                 R++;
                 arrThursday[R] = nestedItem.EndTime;
+                arrThursdayNames[R] = nestedItem.CourseName;
                 R++;
               }
               if (nestedItem.Days.includes("F")) {
                 arrFriday[F] = nestedItem.StartTime;
+                arrFridayNames[F] = nestedItem.CourseName;
                 F++;
                 arrFriday[F] = nestedItem.EndTime;
+                arrFridayNames[F] = nestedItem.CourseName;
                 F++;
               }
 
             });
 
+            let namesIndex = 0;
             //fill in the arr information in a weekly schedule table
             for (let i = 0; i < arrMonday.length; i++) {
               let xStart = arrMonday[i].charAt(0) + arrMonday[i].charAt(1);
               let xEnd = arrMonday[i].charAt(3) + arrMonday[i].charAt(4);
-
-              if ($("#profileTBody tr").children().eq(0).html() == arrMonday[i] || $(this).children().eq(0).html().includes(xStart)) {
-                $(this).children().eq(1).css("background-color", "#add8e6");
-              }
               $("#profileTBody tr td:nth-child(2)").each(function (index) {
                 if ($(this).parent().children().eq(0).html() == arrMonday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
                   $(this).parent().children().eq(1).css("background-color", "#add8e6");
+                  let x = $(this).parent().children().eq(1).children(1).eq(1).html();
+                  if (x != arrMondayNames[namesIndex])
+                    $(this).parent().children().eq(1).children().eq(1).html(x + " " + arrMondayNames[namesIndex]);
+                  namesIndex++;
                 }
               })
 
             }
 
+            namesIndex = 0;
             //fill in the arr information in a weekly schedule table
             for (let i = 0; i < arrTuesday.length; i++) {
               let xStart = arrTuesday[i].charAt(0) + arrTuesday[i].charAt(1);
@@ -386,10 +419,15 @@ $(document).ready(function () {
               $("#profileTBody tr td:nth-child(3)").each(function (index) {
                 if ($(this).parent().children().eq(0).html() == arrTuesday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
                   $(this).parent().children().eq(2).css("background-color", "#f9f777");
+                  let x = $(this).parent().children().eq(2).children(1).eq(1).html();
+                  if (x != arrTuesdayNames[namesIndex])
+                    $(this).parent().children().eq(2).children().eq(1).html(x + " " + arrTuesdayNames[namesIndex]);
+                  namesIndex++;
                 }
               })
             }
 
+            namesIndex = 0;
             for (let i = 0; i < arrWednesday.length; i++) {
               let xStart = arrWednesday[i].charAt(0) + arrWednesday[i].charAt(1);
               let xEnd = arrWednesday[i].charAt(3) + arrWednesday[i].charAt(4);
@@ -397,10 +435,15 @@ $(document).ready(function () {
               $("#profileTBody tr td:nth-child(4)").each(function (index) {
                 if ($(this).parent().children().eq(0).html() == arrWednesday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
                   $(this).parent().children().eq(3).css("background-color", "#add8e6");
+                  let x = $(this).parent().children().eq(3).children(1).eq(1).html();
+                  if (x != arrWednesdayNames[namesIndex])
+                    $(this).parent().children().eq(3).children().eq(1).html(x + " " + arrWednesdayNames[namesIndex]);
+                  namesIndex++;
                 }
               })
             }
 
+            namesIndex = 0;
             for (let i = 0; i < arrThursday.length; i++) {
               let xStart = arrThursday[i].charAt(0) + arrThursday[i].charAt(1);
               let xEnd = arrThursday[i].charAt(3) + arrThursday[i].charAt(4);
@@ -408,10 +451,16 @@ $(document).ready(function () {
               $("#profileTBody tr td:nth-child(5)").each(function (index) {
                 if ($(this).parent().children().eq(0).html() == arrThursday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
                   $(this).parent().children().eq(4).css("background-color", "#f9f777");
+                  let x = $(this).parent().children().eq(4).children(1).eq(1).html();
+                  if (x != arrThursdayNames[namesIndex])
+                    $(this).parent().children().eq(4).children().eq(1).html(x + " " + arrThursdayNames[namesIndex]);
+                  namesIndex++;
+                  
                 }
               })
             }
 
+            namesIndex = 0;
             for (let i = 0; i < arrFriday.length; i++) {
               let xStart = arrFriday[i].charAt(0) + arrFriday[i].charAt(1);
               let xEnd = arrFriday[i].charAt(3) + arrFriday[i].charAt(4);
@@ -419,6 +468,10 @@ $(document).ready(function () {
               $("#profileTBody tr td:nth-child(6)").each(function (index) {
                 if ($(this).parent().children().eq(0).html() == arrFriday[i] || $(this).parent().children().eq(0).html().includes(xStart)) {
                   $(this).parent().children().eq(5).css("background-color", "#f9f777");
+                  let x = $(this).parent().children().eq(2).children(1).eq(1).html();
+                  if (x != arrFridayNames[namesIndex])
+                    $(this).parent().children().eq(5).children().eq(1).html(x + " " + arrFridayNames[namesIndex]);
+                  namesIndex++;
                 }
               })
             }
@@ -472,6 +525,7 @@ $(document).ready(function () {
               );
               $(this).text($(this).attr("data-progress") + "%");
             });
+            $("#profileProgresBarExplanation").html("You have finished " + nbrCompletedCredits + " credits out of " + nbrTotalCredits);
 
           }
 
@@ -496,21 +550,6 @@ $(document).ready(function () {
       });
 
   } else if (document.title == "Homepage") {
-    let x = Cookies.get('accept');
-    if (x == 'true') {
-      $(".cookies-eu-banner").remove();
-      console.log("this shouldnt be here")
-    }
-
-    $("#cookieAccept").click(function () {
-      Cookies.set('accept', true);
-      $(".cookies-eu-banner").remove();
-    });
-    $("#cookieReject").click(function () {
-      Cookies.remove('username');
-      Cookies.remove('accept');
-      window.open('index.html');
-    })
     let globalUsername = Cookies.get('username');
     //calendar code
     let month = 3; //march
@@ -773,7 +812,7 @@ function loadCalendar(month, year, direction) {
 
 function loadCalendarJsonData(month, year, direction) {
   month++;
-  let count = 1;
+  let count = 0;
   month = 0 + month;
   fetch("events.json")
     .then((response) => response.json())
@@ -801,17 +840,36 @@ function loadCalendarJsonData(month, year, direction) {
           })
 
           let today = new Date();
-
-          if (itemDay > today.getDate()) {
+          //getMonth starts with index 0!?!
+          if (itemDay > today.getDate() && itemMonth >= today.getMonth() + 1) {
             itemMonth = parseInt(itemMonth) + 10;
             itemMonth = parseInt(itemMonth) - 10;
             itemMonth = parseInt(itemMonth) - 1;
             $("#homepageUpcomingEvents").append("<p class='animatedFadeIn'><b>" + getMonthName(itemMonth) + " " + itemDay + ": </b>" + item.Description + "</p>");
 
           }
+
+          // console.log(parseInt(today.getMonth()) +">"+ parseInt(itemMonth))
+          // if (parseInt(today.getMonth()) >= parseInt(itemMonth)) {
+          //   if(count==1){
+          //     $("#homepageUpcomingEvents").append("<p class='animatedFadeIn'>There are no upcoming events this month</p>");
+          //     count++;
+          //   }
+          // }
         }
       });
+
+
+      $("#homepageUpcomingEvents>p").each(function () {
+        count++;
+      });
+      if (count == 1) {
+        $("#homepageUpcomingEvents").append("<p class='animatedFadeIn'>There are no upcoming events this month</p>");
+        count++;
+      }
     });
+
+
 }
 
 function getMonthName(month) {
@@ -1195,6 +1253,8 @@ function search(el) {
 
       $(this).addClass("homepageActivated");
     };
+
+
   }
   //add homepageactivated to button that was clicked on
   $("#registerbtns").prepend('<button id="registerbtnFirst">&#10229;</button>');
@@ -1238,6 +1298,18 @@ function search(el) {
     });
 
     $(this).addClass("homepageActivated");
+  });
+
+
+  let iteration = 1;
+  $("#registerTable tbody tr").not(".hidden").each(function (i) {
+    if (iteration % 2 != 0) {
+      $(this).css("background-color", "white");
+    }
+    else if (iteration % 2 == 0) {
+      $(this).css("background-color", "rgb(247,247,247)");
+    }
+    iteration++;
   });
 }
 
@@ -1418,7 +1490,17 @@ function reloadCourses() {
       $(this).removeClass("homepageActivated");
     });
 
-    $(this).addClass("homepageActivated");
+    $(this).addClass("homepageActivated")
+  });
+  let iteration = 1;
+  $("#registerTable tbody tr").not(".hidden").each(function (i) {
+    if (iteration % 2 != 0) {
+      $(this).css("background-color", "white");
+    }
+    else if (iteration % 2 == 0) {
+      $(this).css("background-color", "rgb(247,247,247)");
+    }
+    iteration++;
   });
 }
 
@@ -1767,7 +1849,7 @@ function quickAddCourse(el) {
     return;
   }
 
-  
+
 
   let hasErred = false;
   //check if user has already registered for this course but in a different section
@@ -1840,10 +1922,10 @@ function quickAddCourse(el) {
     $(savedRow).removeClass("scheduled");
     return; //not available
   }
-  if (hasErred){
+  if (hasErred) {
     $(savedRow).removeClass("scheduled");
     return;
-  } 
+  }
 
   $(savedRow).removeClass("scheduled");
   $(savedRow).addClass("confirmed");

@@ -236,3 +236,7 @@ footer {
     margin-top: 40% !important;
   }
 }
+
+body > div{
+  margin: 10% auto !important;
+}

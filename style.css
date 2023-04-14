@@ -201,6 +201,20 @@ footer>p {
     z-index: 10;
 }
 
+.cookies-eu-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(49, 49, 49);
+    color: #fff;
+    padding: 6px;
+    font-size: 13px;
+    text-align: center;
+    left:0px;
+    max-width:10%;
+}
+
 .cookies-eu-banner #cookieAccept {
     font-weight: bold;
     width: 10%;
@@ -1410,7 +1424,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .table-responsive tbody tr:nth-child(even) {
-    background-color: #EAEAEA;
+    background-color: rgb(247,247,247);
 }
 
 .registerButtonCourseControl:active,
@@ -1794,6 +1808,18 @@ input[type=number]::-webkit-inner-spin-button {
     width: 74%;
 }
 
+#profileProgressBar > * {
+    margin-left:0px !important;
+}
+
+#profileProgressBar>p{
+    text-align: center;
+}
+
+#profileProgressBar > h4, .classicArticle h4{
+    padding-left:0px !important;
+}
+
 .profileCard {
     background-color: white;
     border-radius: 5%;
@@ -1856,14 +1882,11 @@ input[type=number]::-webkit-inner-spin-button {
     color: white;
 }
 
-.profileInfoLines:hover,
-.profileCard:hover {
+.profileInfoLines:hover {
     background-color: rgb(247, 247, 247);
 }
 
-.profileCard:hover {
-    border: 1px solid white;
-}
+
 
 @media(max-width: 1200px) {
 
