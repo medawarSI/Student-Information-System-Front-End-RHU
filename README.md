@@ -11,7 +11,7 @@ The aim of this project was to create a modern front-end design prototype for th
 This website reads its data from a JSON file. Any data changes made by the user are not saved. A database was not established for the website as it was not required by the course.
   
 Collaborators (Name | Email):  
-Abed Amouneh  
+Abed Amouneh | amounehabed@gmail.com
 Lama Houry  
 Mustafa Harb  
 Sammy Medawar | sammymedawar2002@gmail.com  
