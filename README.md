@@ -20,4 +20,4 @@ Resources:
 Jquery  
 Bootstrap 4  
 JS-Cookie (https://github.com/js-cookie/js-cookie)  
-FormSubmit (https://www.google.com/search?q=form+submit&oq=form+submit&aqs=chrome.0.0i512l5j69i60l3.2206j0j7&sourceid=chrome&ie=UTF-8)
+FormSubmit (https://formsubmit.co/)
