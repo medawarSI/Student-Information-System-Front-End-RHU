@@ -20,4 +20,6 @@ Resources:
 Jquery (https://releases.jquery.com/)  
 Bootstrap 4 (https://getbootstrap.com/docs/4.0/getting-started/introduction/)  
 JS-Cookie (https://github.com/js-cookie/js-cookie)  
-FormSubmit (https://formsubmit.co/)
+FormSubmit (https://formsubmit.co/)  
+  
+**Note**: Opening the project directly via a browser will not load it up properly. Please access the project using the link or a Live Server extension on Visual Studio Code
